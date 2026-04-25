@@ -6,7 +6,7 @@
 <title>PrepaTec SLP: The Garden is a Living Lab</title>
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Nunito:ital,wght@0,400;0,600;0,700;0,900;1,400&family=JetBrains+Mono:wght@400;700&display=swap');
-
+ 
 :root {
   --green:   #2d8c4e;
   --lime:    #91c93f;
@@ -20,17 +20,17 @@
   --mid:     #4a6741;
   --soft:    #e8f4e8;
 }
-
+ 
 * { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
-
+ 
 body {
   background: var(--bg);
   font-family: 'Nunito', sans-serif;
   color: var(--dark);
   overflow-x: hidden;
 }
-
+ 
 /* HERO */
 .hero {
   min-height: 100vh;
@@ -42,7 +42,7 @@ body {
   position: relative;
   overflow: hidden;
 }
-
+ 
 .hero::before {
   content: '';
   position: absolute; inset: 0;
@@ -50,7 +50,7 @@ body {
     radial-gradient(circle at 20% 80%, rgba(145,201,63,0.3) 0%, transparent 40%),
     radial-gradient(circle at 80% 20%, rgba(87,191,223,0.2) 0%, transparent 40%);
 }
-
+ 
 .hero-badge {
   background: rgba(255,255,255,0.15);
   backdrop-filter: blur(8px);
@@ -67,12 +67,12 @@ body {
   z-index: 2;
   animation: pop 0.6s 0.2s both;
 }
-
+ 
 @keyframes pop {
   from { transform: scale(0.7); opacity: 0; }
   to   { transform: scale(1);   opacity: 1; }
 }
-
+ 
 .hero h1 {
   font-family: 'Fredoka One', cursive;
   font-size: clamp(2.8rem, 9vw, 6rem);
@@ -82,9 +82,9 @@ body {
   text-shadow: 0 4px 20px rgba(0,0,0,0.3);
   animation: pop 0.7s 0.4s both;
 }
-
+ 
 .hero h1 span { color: var(--yellow); }
-
+ 
 .hero-sub {
   font-size: 1.15rem;
   color: rgba(255,255,255,0.85);
@@ -94,13 +94,13 @@ body {
   position: relative; z-index: 2;
   animation: pop 0.7s 0.6s both;
 }
-
+ 
 .hero-stats {
   display: flex; gap: 1.5rem; flex-wrap: wrap; justify-content: center;
   position: relative; z-index: 2;
   animation: pop 0.7s 0.8s both;
 }
-
+ 
 .hstat {
   background: rgba(255,255,255,0.15);
   backdrop-filter: blur(8px);
@@ -109,10 +109,10 @@ body {
   padding: 0.75rem 1.25rem;
   text-align: center;
 }
-
+ 
 .hstat .n { font-family: 'Fredoka One', cursive; font-size: 1.8rem; color: var(--yellow); display: block; }
 .hstat .l { font-size: 0.78rem; color: rgba(255,255,255,0.8); text-transform: uppercase; letter-spacing: 0.1em; }
-
+ 
 .scroll-down {
   position: absolute; bottom: 2rem; left: 50%;
   transform: translateX(-50%);
@@ -123,33 +123,33 @@ body {
   display: flex; flex-direction: column; align-items: center; gap: 0.5rem;
   animation: bob 2s ease-in-out infinite;
 }
-
+ 
 @keyframes bob {
   0%,100% { transform: translateX(-50%) translateY(0); }
   50%      { transform: translateX(-50%) translateY(6px); }
 }
-
+ 
 /* FLOATING LEAVES */
 .floating-leaves {
   position: absolute; inset: 0;
   pointer-events: none;
   overflow: hidden;
 }
-
+ 
 .leaf {
   position: absolute;
   font-size: 2rem;
   animation: floatLeaf linear infinite;
   opacity: 0.5;
 }
-
+ 
 @keyframes floatLeaf {
   0%   { transform: translateY(110vh) rotate(0deg); opacity: 0; }
   10%  { opacity: 0.5; }
   90%  { opacity: 0.3; }
   100% { transform: translateY(-10vh) rotate(360deg); opacity: 0; }
 }
-
+ 
 /* NAV */
 nav {
   position: sticky; top: 0; z-index: 100;
@@ -161,7 +161,7 @@ nav {
   box-shadow: 0 2px 16px rgba(45,140,78,0.1);
   overflow-x: auto;
 }
-
+ 
 .nav-logo {
   font-family: 'Fredoka One', cursive;
   font-size: 1.1rem;
@@ -170,7 +170,7 @@ nav {
   white-space: nowrap;
   flex-shrink: 0;
 }
-
+ 
 nav a {
   padding: 0 0.9rem;
   height: 56px; line-height: 56px;
@@ -183,16 +183,16 @@ nav a {
   margin-bottom: -3px;
   transition: all 0.2s;
 }
-
+ 
 nav a:hover { color: var(--green); border-bottom-color: var(--green); }
-
+ 
 /* SECTION WRAPPER */
 .section {
   max-width: 1100px;
   margin: 0 auto;
   padding: 5rem 1.5rem;
 }
-
+ 
 .sec-label {
   display: inline-flex; align-items: center; gap: 0.5rem;
   background: var(--soft);
@@ -206,7 +206,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   letter-spacing: 0.15em;
   margin-bottom: 1rem;
 }
-
+ 
 .sec-title {
   font-family: 'Fredoka One', cursive;
   font-size: clamp(2rem, 5vw, 3.2rem);
@@ -214,9 +214,9 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   margin-bottom: 0.5rem;
   line-height: 1.1;
 }
-
+ 
 .sec-title span { color: var(--green); }
-
+ 
 .sec-intro {
   font-size: 1rem;
   color: #5a7a5a;
@@ -224,14 +224,14 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   line-height: 1.75;
   margin-bottom: 3rem;
 }
-
+ 
 /* SPECIES CARDS */
 .species-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
   gap: 1.5rem;
 }
-
+ 
 .sp-card {
   background: white;
   border-radius: 20px;
@@ -240,29 +240,29 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   box-shadow: 0 4px 20px rgba(45,140,78,0.07);
   transition: transform 0.3s, box-shadow 0.3s;
 }
-
+ 
 .sp-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 12px 36px rgba(45,140,78,0.15);
 }
-
+ 
 .sp-header {
   padding: 1.25rem 1.5rem 1rem;
   border-bottom: 2px dashed #e0f0d8;
   display: flex; align-items: flex-start; gap: 0.75rem;
 }
-
+ 
 .sp-icon { font-size: 2.2rem; flex-shrink: 0; }
-
+ 
 .sp-names { flex: 1; }
-
+ 
 .sp-common {
   font-family: 'Fredoka One', cursive;
   font-size: 1.15rem;
   color: var(--dark);
   line-height: 1.2;
 }
-
+ 
 .sp-sci {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.72rem;
@@ -270,9 +270,9 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   font-style: italic;
   margin-top: 0.1rem;
 }
-
+ 
 .sp-body { padding: 1.25rem 1.5rem; }
-
+ 
 .sp-tag {
   display: inline-block;
   background: var(--soft);
@@ -284,14 +284,14 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   margin: 0.15rem;
   border: 1px solid var(--lime);
 }
-
+ 
 .sp-text {
   font-size: 0.88rem;
   color: #4a6a4a;
   line-height: 1.7;
   margin: 0.75rem 0;
 }
-
+ 
 .molecule-box {
   background: linear-gradient(135deg, #f0fbe8, #e8f4e0);
   border: 2px solid var(--lime);
@@ -299,7 +299,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   padding: 0.75rem 1rem;
   margin-top: 0.75rem;
 }
-
+ 
 .mol-title {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.68rem;
@@ -308,26 +308,26 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   letter-spacing: 0.12em;
   margin-bottom: 0.4rem;
 }
-
+ 
 .mol-name {
   font-weight: 900;
   font-size: 0.95rem;
   color: var(--dark);
 }
-
+ 
 .mol-formula {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.8rem;
   color: var(--green);
 }
-
+ 
 .mol-desc {
   font-size: 0.8rem;
   color: #5a7a5a;
   margin-top: 0.3rem;
   line-height: 1.55;
 }
-
+ 
 /* MOLECULE SVG STRUCTURES */
 .mol-structure {
   background: white;
@@ -337,12 +337,12 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   margin-top: 0.75rem;
   text-align: center;
 }
-
+ 
 .mol-structure svg {
   max-width: 100%;
   height: auto;
 }
-
+ 
 .mol-structure-label {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.65rem;
@@ -351,7 +351,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   letter-spacing: 0.1em;
   margin-bottom: 0.4rem;
 }
-
+ 
 /* FUNCTIONAL GROUP TAGS */
 .fg-tag {
   display: inline-block;
@@ -364,7 +364,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   margin: 0.1rem;
   border: 1px solid #f5c542;
 }
-
+ 
 .fg-analysis {
   background: linear-gradient(135deg, #fef9e7, #fdf3d7);
   border: 2px solid #f5d247;
@@ -375,9 +375,9 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   color: #5a4a2a;
   line-height: 1.6;
 }
-
+ 
 .fg-analysis strong { color: #8b6914; }
-
+ 
 /* REAL LIFE USE */
 .real-use-box {
   background: linear-gradient(135deg, #e8f0ff, #dce8ff);
@@ -389,9 +389,9 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   color: #2a4a6a;
   line-height: 1.6;
 }
-
+ 
 .real-use-box strong { color: #1a5a8a; }
-
+ 
 /* EXPANDABLE CONTENT */
 .expand-toggle {
   background: var(--soft);
@@ -407,34 +407,34 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   margin-top: 0.75rem;
   display: inline-block;
 }
-
+ 
 .expand-toggle:hover { background: #d0ead0; }
-
+ 
 .expand-content {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.5s ease;
 }
-
+ 
 .expand-content.open {
   max-height: 3000px;
 }
-
+ 
 /* CHEMISTRY PANELS */
 .chem-section {
   background: var(--dark);
   padding: 5rem 1.5rem;
 }
-
+ 
 .chem-inner { max-width: 1100px; margin: 0 auto; }
-
+ 
 .chem-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 1.5rem;
   margin-top: 2.5rem;
 }
-
+ 
 .chem-card {
   background: rgba(255,255,255,0.04);
   border: 2px solid rgba(145,201,63,0.25);
@@ -443,21 +443,21 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   transition: border-color 0.3s, transform 0.3s;
   cursor: pointer;
 }
-
+ 
 .chem-card:hover {
   border-color: var(--lime);
   transform: translateY(-4px);
 }
-
+ 
 .chem-icon { font-size: 2.5rem; margin-bottom: 0.75rem; display: block; }
-
+ 
 .chem-card h3 {
   font-family: 'Fredoka One', cursive;
   font-size: 1.35rem;
   color: white;
   margin-bottom: 0.4rem;
 }
-
+ 
 .chem-eq {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.78rem;
@@ -469,20 +469,20 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   display: inline-block;
   margin-bottom: 0.75rem;
 }
-
+ 
 .chem-text {
   font-size: 0.9rem;
   color: rgba(255,255,255,0.7);
   line-height: 1.7;
 }
-
+ 
 .chem-expand {
   max-height: 0; overflow: hidden;
   transition: max-height 0.5s ease;
 }
-
+ 
 .chem-card.open .chem-expand { max-height: 500px; }
-
+ 
 .chem-expand p {
   font-size: 0.86rem;
   color: rgba(255,255,255,0.6);
@@ -491,7 +491,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   margin-top: 1rem;
   border-top: 1px dashed rgba(145,201,63,0.2);
 }
-
+ 
 .expand-btn {
   margin-top: 1rem;
   background: rgba(145,201,63,0.15);
@@ -505,17 +505,17 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   cursor: pointer;
   transition: background 0.2s;
 }
-
+ 
 .expand-btn:hover { background: rgba(145,201,63,0.25); }
-
+ 
 /* INTERACTIVE SOIL */
 .soil-section {
   background: linear-gradient(135deg, #f6f9f0, #e8f4e0);
   padding: 5rem 1.5rem;
 }
-
+ 
 .soil-inner { max-width: 860px; margin: 0 auto; }
-
+ 
 .soil-demo {
   background: white;
   border-radius: 24px;
@@ -523,7 +523,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   padding: 2rem;
   margin-top: 2rem;
 }
-
+ 
 .soil-label-row {
   display: flex; justify-content: space-between;
   font-family: 'JetBrains Mono', monospace;
@@ -531,7 +531,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   color: var(--mid);
   margin-bottom: 0.5rem;
 }
-
+ 
 .soil-bar {
   width: 100%;
   height: 50px;
@@ -542,7 +542,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   margin-bottom: 0.5rem;
   border: 2px solid #ddd;
 }
-
+ 
 .soil-cursor {
   position: absolute; top: -6px; bottom: -6px;
   width: 4px; background: var(--yellow);
@@ -551,7 +551,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   pointer-events: none;
   box-shadow: 0 0 8px rgba(245,210,71,0.8);
 }
-
+ 
 .soil-readout {
   background: var(--soft);
   border-radius: 14px;
@@ -564,9 +564,9 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   border: 2px solid var(--lime);
   transition: all 0.3s;
 }
-
+ 
 .soil-readout strong { color: var(--green); }
-
+ 
 /* TEMP DEMO */
 .temp-grid {
   display: grid;
@@ -574,13 +574,13 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   gap: 1.5rem;
   margin-top: 2rem;
 }
-
+ 
 @media (max-width: 600px) {
   .temp-grid { grid-template-columns: 1fr; }
   .viz-grid  { grid-template-columns: 1fr !important; }
   .species-grid { grid-template-columns: 1fr; }
 }
-
+ 
 .temp-box {
   border-radius: 20px;
   padding: 2rem;
@@ -588,17 +588,17 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   position: relative;
   overflow: hidden;
 }
-
+ 
 .temp-box.sun {
   background: linear-gradient(135deg, #ffeccc, #ffd580);
   border: 3px solid #f5a623;
 }
-
+ 
 .temp-box.shade {
   background: linear-gradient(135deg, #e0f0d8, #c5e8b0);
   border: 3px solid var(--lime);
 }
-
+ 
 .temp-icon { font-size: 3rem; display: block; margin-bottom: 0.5rem; }
 .temp-val {
   font-family: 'Fredoka One', cursive;
@@ -609,7 +609,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
 .temp-box.shade .temp-val { color: var(--green); }
 .temp-lbl { font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.7; }
 .temp-note { font-size: 0.82rem; margin-top: 0.75rem; color: #4a6a4a; line-height: 1.6; }
-
+ 
 /* CHARTS */
 .viz-grid {
   display: grid;
@@ -618,7 +618,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   align-items: start;
   margin-top: 2rem;
 }
-
+ 
 .chart-box {
   background: white;
   border-radius: 20px;
@@ -626,29 +626,29 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   padding: 1.5rem;
   box-shadow: 0 4px 20px rgba(45,140,78,0.07);
 }
-
+ 
 .chart-title {
   font-family: 'Fredoka One', cursive;
   font-size: 1.1rem;
   color: var(--green);
   margin-bottom: 1rem;
 }
-
+ 
 /* FUNCTIONAL GROUPS SECTION */
 .fg-section {
   background: linear-gradient(135deg, #fefce8, #fef9c3);
   padding: 5rem 1.5rem;
 }
-
+ 
 .fg-inner { max-width: 1100px; margin: 0 auto; }
-
+ 
 .fg-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   gap: 1rem;
   margin-top: 2rem;
 }
-
+ 
 .fg-card {
   background: white;
   border-radius: 16px;
@@ -658,45 +658,44 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: default;
 }
-
+ 
 .fg-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(245,210,71,0.3);
 }
-
+ 
 .fg-card svg { max-width: 100%; height: 80px; }
-
+ 
 .fg-card-name {
   font-family: 'Fredoka One', cursive;
   font-size: 0.9rem;
   color: var(--dark);
   margin-top: 0.5rem;
 }
-
+ 
 .fg-card-formula {
   font-family: 'JetBrains Mono', monospace;
   font-size: 0.7rem;
   color: #8b6914;
   margin-top: 0.2rem;
 }
-
+ 
 .fg-card-desc {
   font-size: 0.72rem;
   color: #5a7a5a;
   margin-top: 0.3rem;
   line-height: 1.4;
 }
-
+ 
 /* CONSERVATION SECTION */
 .conservation-section {
   background: linear-gradient(160deg, #1a4731 0%, #2d8c4e 50%, #1e4d2b 100%);
   padding: 5rem 1.5rem;
   color: white;
 }
-
+ 
 .conservation-inner { max-width: 960px; margin: 0 auto; }
-
-/* ── stat counters ── */
+ 
 .cons-stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -725,8 +724,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   margin-top: 0.3rem;
   line-height: 1.4;
 }
-
-/* ── tabbed cards ── */
+ 
 .cons-tabs {
   display: flex;
   gap: 0.5rem;
@@ -761,7 +759,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
 }
 .cons-tab-panel.active { display: block; }
 @keyframes consFadeIn { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
-
+ 
 .cons-tab-panel h3 {
   font-family: 'Fredoka One', cursive;
   font-size: 1.05rem;
@@ -773,8 +771,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   color: rgba(255,255,255,0.75);
   line-height: 1.75;
 }
-
-/* ── country comparison bar ── */
+ 
 .cons-country-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -812,8 +809,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   width: 0%;
   transition: width 1.2s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
-
-/* ── garden alternatives ── */
+ 
 .cons-alt-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -844,8 +840,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   margin-top: 0.5rem;
   display: inline-block;
 }
-
-/* ── contamination path ── */
+ 
 .cons-path {
   display: flex;
   align-items: flex-start;
@@ -904,8 +899,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   .cons-path-step { max-width: 100%; min-width: unset; width: 100%; }
   .cons-path-arrow { transform: rotate(90deg); }
 }
-
-/* conservation legacy compat */
+ 
 .conservation-card {
   background: rgba(255,255,255,0.06);
   border: 2px solid rgba(145,201,63,0.3);
@@ -926,7 +920,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   color: rgba(255,255,255,0.75);
   line-height: 1.7;
 }
-
+ 
 /* SPECIES PHOTO */
 .sp-photo {
   width: 100%;
@@ -936,6 +930,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   display: block;
   border-radius: 12px 12px 0 0;
   transition: transform 0.4s ease;
+  cursor: zoom-in;
 }
 .sp-card:hover .sp-photo { transform: scale(1.04); }
 .sp-photo-wrap {
@@ -943,7 +938,88 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   border-radius: 12px 12px 0 0;
   border-bottom: 2px solid #e8f4e0;
 }
-
+ 
+/* LIGHTBOX */
+.lightbox {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.92);
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 2rem;
+  cursor: zoom-out;
+  animation: lbFade 0.25s ease;
+}
+ 
+.lightbox.open { display: flex; }
+ 
+@keyframes lbFade {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+ 
+.lightbox img {
+  max-width: 95%;
+  max-height: 85vh;
+  border-radius: 12px;
+  box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+  cursor: default;
+  animation: lbZoom 0.3s ease;
+}
+ 
+@keyframes lbZoom {
+  from { transform: scale(0.92); opacity: 0; }
+  to   { transform: scale(1);    opacity: 1; }
+}
+ 
+.lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  background: rgba(255,255,255,0.15);
+  border: 2px solid rgba(255,255,255,0.3);
+  color: white;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  font-size: 1.6rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s, transform 0.2s;
+  line-height: 1;
+}
+ 
+.lightbox-close:hover { background: rgba(255,255,255,0.3); transform: scale(1.1); }
+ 
+.lightbox-caption {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-family: 'Fredoka One', cursive;
+  background: rgba(0,0,0,0.55);
+  padding: 0.55rem 1.3rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  text-align: center;
+  max-width: 85%;
+}
+ 
+.lightbox-caption .sci {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-style: italic;
+  opacity: 0.75;
+  display: block;
+  margin-top: 0.15rem;
+}
+ 
 /* SOURCE CARD */
 .source-card {
   background: white;
@@ -952,14 +1028,14 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   padding: 1.25rem;
   margin-bottom: 1rem;
 }
-
+ 
 .source-card h4 {
   font-family: 'Fredoka One', cursive;
   font-size: 1rem;
   color: var(--green);
   margin-bottom: 0.75rem;
 }
-
+ 
 .source-item {
   font-size: 0.8rem;
   color: #4a6a4a;
@@ -968,18 +1044,18 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   padding-bottom: 0.5rem;
   border-bottom: 1px dashed #e0f0d8;
 }
-
+ 
 .source-item:last-child { border-bottom: none; }
-
+ 
 .source-item strong { color: var(--dark); display: block; margin-bottom: 0.15rem; }
-
+ 
 .source-item a {
   color: var(--green);
   word-break: break-all;
   font-size: 0.72rem;
   font-family: 'JetBrains Mono', monospace;
 }
-
+ 
 /* DEFINITION TOOLTIP */
 .def-term {
   border-bottom: 2px dotted var(--lime);
@@ -988,7 +1064,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   font-weight: 700;
   color: var(--green);
 }
-
+ 
 .def-popup {
   display: none;
   position: absolute;
@@ -1006,12 +1082,12 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   box-shadow: 0 8px 24px rgba(0,0,0,0.3);
   font-weight: 400;
 }
-
+ 
 .def-term:hover .def-popup,
 .def-term:focus .def-popup {
   display: block;
 }
-
+ 
 /* TICKER */
 .ticker-wrap {
   background: var(--green);
@@ -1019,7 +1095,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   overflow: hidden;
   white-space: nowrap;
 }
-
+ 
 .ticker {
   display: inline-block;
   animation: ticker 30s linear infinite;
@@ -1027,14 +1103,14 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   font-size: 1rem;
   color: white;
 }
-
+ 
 .ticker span {
   margin: 0 2.5rem;
   color: var(--yellow);
 }
-
+ 
 @keyframes ticker { 0% { transform: translateX(0); } 100% { transform: translateX(-50%); } }
-
+ 
 /* FOOTER */
 footer {
   background: var(--dark);
@@ -1043,19 +1119,18 @@ footer {
   color: rgba(255,255,255,0.5);
   font-size: 0.9rem;
 }
-
+ 
 footer strong { color: var(--lime); }
 </style>
 </head>
 <body>
-
+ 
 <!-- HERO -->
 <section class="hero">
   <div class="floating-leaves" id="floaty"></div>
   <div class="hero-badge">PrepaTec Campus San Luis Potosi . Chemistry is Alive</div>
   <h1>The Garden is a<br><span>Living Lab</span></h1>
-  <p class="hero-sub">You walk past it every day, but PrepaTec SLP has a secret garden behind LamBot that is full of chemical reactions, functional groups, and molecular interactions. Each plant behaves different because of its chemistry. Let's explore it together.
-</p>
+  <p class="hero-sub">You walk past it every day, but PrepaTec SLP has a secret garden behind LamBot that is full of chemical reactions, functional groups, and molecular interactions. Each plant behaves different because of its chemistry. Let's explore it together.</p>
   <div class="hero-stats">
     <div class="hstat"><span class="n">8</span><span class="l">Species</span></div>
     <div class="hstat"><span class="n">10</span><span class="l">Functional Groups</span></div>
@@ -1064,25 +1139,12 @@ footer strong { color: var(--lime); }
   </div>
   <div class="scroll-down">scroll to explore</div>
 </section>
-
+ 
 <!-- TICKER -->
 <div class="ticker-wrap">
-  <div class="ticker">Lavender makes linalool, a monoterpene alcohol that calms your nervous system<span>*</span>Aloe vera gel dissolves in water because acemannan has lots of hydroxyl (OH) groups<span>*</span>
-    Mulberry leaves are 45 to 50 percent carbon by dry weight
-    <span>*</span>Geraniums produce geraniol, which gets used in luxury perfumes worldwide<span>*</span>
-    Our lime tree peel is about 65 percent limonene, that fresh citrus scent
-    <span>*</span>Tomatoes contain lycopene, and cooking actually makes more of it available<span>*</span>Raw cassava has a compound that can release hydrogen cyanide, but cooking destroys it safely<span>*</span>
-    &nbsp;&nbsp;&nbsp;&nbsp;Lavender produces linalool, a monoterpene alcohol that calms your nervous system
-    <span>*</span>Aloe vera gel dissolves in water because acemannan has lots of hydroxyl (OH) groups<span>*</span>
-    Mulberry leaves are 45 to 50 percent carbon by dry weight
-    <span>*</span>
-    Geraniums produce geraniol, used in luxury perfumes worldwide
-    <span>*</span>
-    Our lime tree peel is about 65 percent limonene, that fresh citrus scent
-    <span>*</span>Tomatoes contain lycopene, and cooking actually makes more of it available<span>*</span>Raw cassava has a compound that can release hydrogen cyanide, but cooking destroys it safely<span>*</span>
-  </div>
+  <div class="ticker">Lavender makes linalool, a monoterpene alcohol that calms your nervous system<span>*</span>Aloe vera gel dissolves in water because acemannan has lots of hydroxyl (OH) groups<span>*</span>Mulberry leaves are 45 to 50 percent carbon by dry weight<span>*</span>Geraniums produce geraniol, which gets used in luxury perfumes worldwide<span>*</span>Our lime tree peel is about 65 percent limonene, that fresh citrus scent<span>*</span>Tomatoes contain lycopene, and cooking actually makes more of it available<span>*</span>Raw cassava has a compound that can release hydrogen cyanide, but cooking destroys it safely<span>*</span>&nbsp;&nbsp;&nbsp;&nbsp;Lavender produces linalool, a monoterpene alcohol that calms your nervous system<span>*</span>Aloe vera gel dissolves in water because acemannan has lots of hydroxyl (OH) groups<span>*</span>Mulberry leaves are 45 to 50 percent carbon by dry weight<span>*</span>Geraniums produce geraniol, used in luxury perfumes worldwide<span>*</span>Our lime tree peel is about 65 percent limonene, that fresh citrus scent<span>*</span>Tomatoes contain lycopene, and cooking actually makes more of it available<span>*</span>Raw cassava has a compound that can release hydrogen cyanide, but cooking destroys it safely<span>*</span></div>
 </div>
-
+ 
 <!-- NAV -->
 <nav>
   <div class="nav-logo">PrepaTec SLP GardenLab</div>
@@ -1095,17 +1157,14 @@ footer strong { color: var(--lime); }
   <a href="#conservation">Conservation</a>
   <a href="#sources">Sources</a>
 </nav>
-
-<!-- ══════════════════ FUNCTIONAL GROUPS REFERENCE ══════════════════ -->
+ 
+<!-- FUNCTIONAL GROUPS -->
 <div class="fg-section" id="functional-groups">
   <div class="fg-inner">
     <div class="sec-label">Step 0: The Building Blocks</div>
     <h2 class="sec-title">Functional Groups in <span>Organic Molecules</span></h2>
-    <p class="sec-intro">Before we get into the plants, we have to learn about the functional groups that give molecules their properties. A functional group is a specific arrangement of atoms within a molecule that determines the chemical behavior.
-</p>
-
+    <p class="sec-intro">Before we get into the plants, we have to learn about the functional groups that give molecules their properties. A functional group is a specific arrangement of atoms within a molecule that determines the chemical behavior.</p>
     <div class="fg-grid">
-
       <div class="fg-card">
         <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
           <polygon points="60,10 95,30 95,60 60,80 25,60 25,30" fill="none" stroke="#1e2d1e" stroke-width="2"/>
@@ -1115,7 +1174,6 @@ footer strong { color: var(--lime); }
         <div class="fg-card-formula">Benzene C6H6</div>
         <div class="fg-card-desc">A stable six-carbon ring with delocalized electrons (shown as a circle inside). Found in many plant pigments.</div>
       </div>
-
       <div class="fg-card">
         <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
           <text x="15" y="50" font-family="JetBrains Mono" font-size="16" fill="#1e2d1e">R</text>
@@ -1128,7 +1186,6 @@ footer strong { color: var(--lime); }
         <div class="fg-card-formula">R-OH</div>
         <div class="fg-card-desc">An oxygen bonded to hydrogen. Makes molecules water-soluble. Found in sugars, menthol, linalool.</div>
       </div>
-
       <div class="fg-card">
         <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
           <text x="5" y="50" font-family="JetBrains Mono" font-size="16" fill="#1e2d1e">R</text>
@@ -1141,7 +1198,6 @@ footer strong { color: var(--lime); }
         <div class="fg-card-formula">R-O-R'</div>
         <div class="fg-card-desc">An oxygen between two carbons. Found in many glycosides such as acemannan and linamarin.</div>
       </div>
-
       <div class="fg-card">
         <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
           <text x="15" y="50" font-family="JetBrains Mono" font-size="16" fill="#1e2d1e">R</text>
@@ -1154,7 +1210,6 @@ footer strong { color: var(--lime); }
         <div class="fg-card-formula">R-SH</div>
         <div class="fg-card-desc">Like an alcohol but with sulfur. Gives onions and garlic their strong smell. Less common in our garden.</div>
       </div>
-
       <div class="fg-card">
         <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
           <text x="10" y="50" font-family="JetBrains Mono" font-size="16" fill="#1e2d1e">R</text>
@@ -1170,7 +1225,6 @@ footer strong { color: var(--lime); }
         <div class="fg-card-formula">R-CHO</div>
         <div class="fg-card-desc">A carbon double bonded to oxygen at the end of a chain. Found in cinnamaldehyde and vanillin.</div>
       </div>
-
       <div class="fg-card">
         <svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg">
           <text x="5" y="55" font-family="JetBrains Mono" font-size="16" fill="#1e2d1e">R</text>
@@ -1186,7 +1240,6 @@ footer strong { color: var(--lime); }
         <div class="fg-card-formula">R-CO-R'</div>
         <div class="fg-card-desc">A carbon double bonded to oxygen in the middle of a chain. Found in many plant metabolites.</div>
       </div>
-
       <div class="fg-card">
         <svg viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg">
           <text x="5" y="45" font-family="JetBrains Mono" font-size="14" fill="#1e2d1e">R</text>
@@ -1204,7 +1257,6 @@ footer strong { color: var(--lime); }
         <div class="fg-card-formula">R-COOH</div>
         <div class="fg-card-desc">Carbon double bonded to O, plus OH. Gives citric acid its sour taste. Found in ascorbic acid, which is Vitamin C.</div>
       </div>
-
       <div class="fg-card">
         <svg viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg">
           <text x="5" y="45" font-family="JetBrains Mono" font-size="14" fill="#1e2d1e">R</text>
@@ -1222,7 +1274,6 @@ footer strong { color: var(--lime); }
         <div class="fg-card-formula">R-COO-R'</div>
         <div class="fg-card-desc">Like a carboxylic acid but the H is replaced by another carbon chain. Gives fruits their sweet smells.</div>
       </div>
-
       <div class="fg-card">
         <svg viewBox="0 0 130 80" xmlns="http://www.w3.org/2000/svg">
           <text x="10" y="50" font-family="JetBrains Mono" font-size="16" fill="#1e2d1e">R</text>
@@ -1237,7 +1288,6 @@ footer strong { color: var(--lime); }
         <div class="fg-card-formula">R-NH2</div>
         <div class="fg-card-desc">A nitrogen with hydrogens. Found in amino acids, chlorophyll, and nitrogen-containing plant compounds.</div>
       </div>
-
       <div class="fg-card">
         <svg viewBox="0 0 140 80" xmlns="http://www.w3.org/2000/svg">
           <text x="5" y="45" font-family="JetBrains Mono" font-size="14" fill="#1e2d1e">R</text>
@@ -1257,20 +1307,18 @@ footer strong { color: var(--lime); }
         <div class="fg-card-formula">R-CONH2</div>
         <div class="fg-card-desc">A carbonyl bonded to nitrogen. The bond that links amino acids to form proteins in all living things.</div>
       </div>
-
     </div>
   </div>
 </div>
-
-<!-- ══════════════════ SPECIES ══════════════════ -->
+ 
+<!-- SPECIES -->
 <section class="section" id="species">
   <div class="sec-label">Step 1: Meet the Plants</div>
   <h2 class="sec-title">Who lives in <span>our garden?</span></h2>
-  <p class="sec-intro">Every plant card below has a scientific name, a key molecule, its chemical structure, and an analysis of the functional groups that explains WHY the molecule behaves like that. Click "Show structure and analysis" on each card to learn more.
-</p>
-
+  <p class="sec-intro">Every plant card below has a scientific name, a key molecule, its chemical structure, and an analysis of the functional groups that explains WHY the molecule behaves like that. Click "Show structure and analysis" on each card to learn more.</p>
+ 
   <div class="species-grid">
-
+ 
     <!-- LAVENDER -->
     <div class="sp-card" data-photo="lavender">
       <div class="sp-header">
@@ -1288,15 +1336,13 @@ footer strong { color: var(--lime); }
           <div class="mol-title">Key Molecule</div>
           <div class="mol-name">Linalool</div>
           <div class="mol-formula">C10H18O</div>
-          <div class="mol-desc">Makes up 25 to 45 percent of lavender essential oil. Linalool is a <span class="def-term" tabindex="0">monoterpene<span class="def-popup">Terpenes are compounds made from repeating 5-carbon isoprene chains. A monoterpene has two isoprene chains (10 carbons). They are responsible for most plant scents and are also present in essential oils.
-</span></span>alcohol that interacts with GABA receptors in the brain, the same pathway some anti-anxiety medications use. It also works as a natural insect repellent.</div>
+          <div class="mol-desc">Makes up 25 to 45 percent of lavender essential oil. Linalool is a <span class="def-term" tabindex="0">monoterpene<span class="def-popup">Terpenes are compounds made from repeating 5-carbon isoprene chains. A monoterpene has two isoprene chains (10 carbons). They are responsible for most plant scents and are also present in essential oils.</span></span> alcohol that interacts with GABA receptors in the brain, the same pathway some anti-anxiety medications use. It also works as a natural insect repellent.</div>
         </div>
         <button class="expand-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? 'Hide structure and analysis' : 'Show structure and analysis'">Show structure and analysis</button>
         <div class="expand-content">
           <div class="mol-structure">
             <div class="mol-structure-label">Linalool Chemical Structure</div>
             <svg viewBox="0 0 380 160" xmlns="http://www.w3.org/2000/svg">
-              <!-- Linalool: 3,7-dimethylocta-1,6-dien-3-ol -->
               <line x1="30" y1="100" x2="70" y2="80" stroke="#333" stroke-width="2"/>
               <line x1="33" y1="95" x2="67" y2="78" stroke="#333" stroke-width="2"/>
               <line x1="70" y1="80" x2="110" y2="100" stroke="#333" stroke-width="2"/>
@@ -1306,36 +1352,25 @@ footer strong { color: var(--lime); }
               <line x1="230" y1="80" x2="270" y2="100" stroke="#333" stroke-width="2"/>
               <line x1="233" y1="75" x2="267" y2="93" stroke="#333" stroke-width="2"/>
               <line x1="270" y1="100" x2="310" y2="80" stroke="#333" stroke-width="2"/>
-              <!-- OH group on C3 -->
               <line x1="110" y1="100" x2="110" y2="135" stroke="#cc0000" stroke-width="2"/>
               <text x="100" y="150" font-family="JetBrains Mono" font-size="14" fill="#cc0000" font-weight="bold">OH</text>
-              <!-- Methyl branches -->
               <line x1="110" y1="100" x2="110" y2="65" stroke="#333" stroke-width="2"/>
               <text x="100" y="58" font-family="JetBrains Mono" font-size="12" fill="#333">CH3</text>
               <line x1="270" y1="100" x2="270" y2="135" stroke="#333" stroke-width="2"/>
               <text x="260" y="148" font-family="JetBrains Mono" font-size="12" fill="#333">CH3</text>
-              <!-- Labels -->
               <text x="18" y="115" font-family="JetBrains Mono" font-size="11" fill="#333">CH2</text>
               <text x="300" y="75" font-family="JetBrains Mono" font-size="12" fill="#333">CH3</text>
-              <!-- Highlight OH -->
               <rect x="95" y="128" width="38" height="25" rx="5" fill="none" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="4,2"/>
               <text x="140" y="145" font-family="Nunito" font-size="9" fill="#cc0000">Alcohol (OH)</text>
             </svg>
           </div>
-          <div style="margin-top:0.5rem;">
-            <span class="fg-tag">Alcohol (OH)</span>
-            <span class="fg-tag">C=C double bonds</span>
-          </div>
-          <div class="fg-analysis">
-            <strong>Functional Group Analysis:</strong>Linalool contains one hydroxyl group (OH), making it an alcohol. This OH group allows it to form hydrogen bonds with water, which is why it dissolves in water and easily evaporates in wet skin. The two carbon-carbon double bonds make it an alkene and contribute to its reactivity and ability to interact with receptor proteins in our nose and brain. The rest of the molecule is a hydrocarbon chain, which makes the overall molecule nonpolar, making it evaporate easily in the air.
-</div>
-          <div class="real-use-box">
-            <strong>Real-life uses in San Luis Potosi:</strong>Lavender essential oils (rich in linalool) are sold in local markets such as Mercado Republica for aromatherapy and as a natural repellent against mosquitoes. The alcohol group makes linalool volatile enough to fill a room with scent, while its ability to interact with GABA receptors in the brain explains why people use it to reduce anxiety. Many local artisans in San Luis also use lavender in handmade soaps.
-</div>
+          <div style="margin-top:0.5rem;"><span class="fg-tag">Alcohol (OH)</span><span class="fg-tag">C=C double bonds</span></div>
+          <div class="fg-analysis"><strong>Functional Group Analysis:</strong> Linalool contains one hydroxyl group (OH), making it an alcohol. This OH group allows it to form hydrogen bonds with water, which is why it dissolves in water and easily evaporates in wet skin. The two carbon-carbon double bonds make it an alkene and contribute to its reactivity and ability to interact with receptor proteins in our nose and brain. The rest of the molecule is a hydrocarbon chain, which makes the overall molecule nonpolar, making it evaporate easily in the air.</div>
+          <div class="real-use-box"><strong>Real-life uses in San Luis Potosi:</strong> Lavender essential oils (rich in linalool) are sold in local markets such as Mercado Republica for aromatherapy and as a natural repellent against mosquitoes. The alcohol group makes linalool volatile enough to fill a room with scent, while its ability to interact with GABA receptors in the brain explains why people use it to reduce anxiety. Many local artisans in San Luis also use lavender in handmade soaps.</div>
         </div>
       </div>
     </div>
-
+ 
     <!-- ALOE VERA -->
     <div class="sp-card" data-photo="aloe-vera">
       <div class="sp-header">
@@ -1348,10 +1383,8 @@ footer strong { color: var(--lime); }
         <span class="sp-tag">Medicinal</span>
         <span class="sp-tag">Burn Relief</span>
         <span class="sp-tag">CAM Plant</span>
-        <p class="sp-text">The spiky succulent with thick, fleshy leaves full of gel. It uses CAM photosynthesis (a special adaptation where the plant opens the tiny pores on the leaves only at NIGHT to save water during the day). This is essential for surviving the semi arid climate of San Luis Potosi.
-</p>
-        <p class="sp-text" style="font-size:0.8rem; color:#7a5a00; background:#fff9e6; padding:0.5rem; border-radius:8px; margin-top:0.5rem;"><strong>Note about our garden:</strong>We classified two Aloe Veras but in fact they are the same but in different life stages, vegetative and reproductive. One is the main rosette plant (the classic Aloe vera), and the other is the same plant but in its blooming stage, sending up a tall yellow flower with pointy ends.
-</p>
+        <p class="sp-text">The spiky succulent with thick, fleshy leaves full of gel. It uses CAM photosynthesis (a special adaptation where the plant opens the tiny pores on the leaves only at NIGHT to save water during the day). This is essential for surviving the semi arid climate of San Luis Potosi.</p>
+        <p class="sp-text" style="font-size:0.8rem; color:#7a5a00; background:#fff9e6; padding:0.5rem; border-radius:8px; margin-top:0.5rem;"><strong>Note about our garden:</strong> We classified two Aloe Veras but in fact they are the same but in different life stages, vegetative and reproductive. One is the main rosette plant (the classic Aloe vera), and the other is the same plant but in its blooming stage, sending up a tall yellow flower with pointy ends.</p>
         <div class="molecule-box">
           <div class="mol-title">Key Molecule</div>
           <div class="mol-name">Acemannan</div>
@@ -1363,54 +1396,40 @@ footer strong { color: var(--lime); }
           <div class="mol-structure">
             <div class="mol-structure-label">Acemannan Repeating Unit (Mannose sugar)</div>
             <svg viewBox="0 0 340 200" xmlns="http://www.w3.org/2000/svg">
-              <!-- Pyranose ring (6-membered) -->
               <line x1="100" y1="60" x2="140" y2="40" stroke="#333" stroke-width="2"/>
               <line x1="140" y1="40" x2="180" y2="60" stroke="#333" stroke-width="2"/>
               <line x1="180" y1="60" x2="180" y2="100" stroke="#333" stroke-width="2"/>
               <line x1="180" y1="100" x2="140" y2="120" stroke="#333" stroke-width="2"/>
               <line x1="140" y1="120" x2="100" y2="100" stroke="#333" stroke-width="2"/>
-              <!-- Oxygen in ring -->
               <text x="88" y="85" font-family="JetBrains Mono" font-size="14" fill="#cc0000" font-weight="bold">O</text>
               <line x1="100" y1="100" x2="100" y2="65" stroke="#cc0000" stroke-width="2"/>
-              <!-- OH groups -->
               <line x1="140" y1="40" x2="140" y2="15" stroke="#cc0000" stroke-width="2"/>
               <text x="130" y="12" font-family="JetBrains Mono" font-size="11" fill="#cc0000">OH</text>
               <line x1="180" y1="60" x2="210" y2="45" stroke="#cc0000" stroke-width="2"/>
               <text x="212" y="43" font-family="JetBrains Mono" font-size="11" fill="#cc0000">OH</text>
               <line x1="140" y1="120" x2="140" y2="148" stroke="#cc0000" stroke-width="2"/>
               <text x="130" y="160" font-family="JetBrains Mono" font-size="11" fill="#cc0000">OH</text>
-              <!-- Acetyl group (ester) -->
               <line x1="180" y1="100" x2="220" y2="115" stroke="#333" stroke-width="2"/>
               <text x="222" y="112" font-family="JetBrains Mono" font-size="10" fill="#cc0000">O</text>
               <line x1="238" y1="112" x2="258" y2="105" stroke="#333" stroke-width="2"/>
               <text x="260" y="100" font-family="JetBrains Mono" font-size="10" fill="#333">C=O</text>
               <line x1="275" y1="105" x2="295" y2="115" stroke="#333" stroke-width="2"/>
               <text x="297" y="118" font-family="JetBrains Mono" font-size="10" fill="#333">CH3</text>
-              <!-- Glycosidic ether linkage indicators -->
               <line x1="70" y1="75" x2="88" y2="75" stroke="#0066cc" stroke-width="2" stroke-dasharray="4,2"/>
               <text x="38" y="78" font-family="JetBrains Mono" font-size="9" fill="#0066cc">next unit</text>
-              <!-- Labels -->
               <rect x="125" y="0" width="35" height="18" rx="4" fill="none" stroke="#cc0000" stroke-width="1" stroke-dasharray="3,2"/>
               <rect x="205" y="32" width="35" height="18" rx="4" fill="none" stroke="#cc0000" stroke-width="1" stroke-dasharray="3,2"/>
               <text x="15" y="185" font-family="Nunito" font-size="10" fill="#5a7a5a">Multiple OH groups make it very water-soluble</text>
               <text x="15" y="197" font-family="Nunito" font-size="10" fill="#5a7a5a">Ether linkage (O) connects sugar units</text>
             </svg>
           </div>
-          <div style="margin-top:0.5rem;">
-            <span class="fg-tag">Alcohol (OH) - multiple</span>
-            <span class="fg-tag">Ether (C-O-C)</span>
-            <span class="fg-tag">Ester (acetyl group)</span>
-          </div>
-          <div class="fg-analysis">
-            <strong>Functional Group Analysis:</strong>Acemannan is full of hydroxyl (OH) groups on every sugar molecule. These OH groups form hydrogen bonds with water molecules, which makes the aloe gel so soluble in water and hydrating. Each sugar molecule is connected to the next through ether linkages (C-O-C bonds), called glycosidic bonds. The acetyl groups (esters, C=O bonded to O) attached to the sugars are what give acemannan its inmune stimulative properties.
-</div>
-          <div class="real-use-box">
-            <strong>Real-life uses in San Luis Potosi:</strong>Aloe vera grows in many gardens across San Luis Potosi due to our semi arid climate. It is normally sliced open, and the gel is applied directly to sunburns and minor cuts. The hydroxyl groups in acemannan create a hydrating film on the skin, while the polysaccharide chains keep the skin moisturized. In the Huasteca Potosina, aloe vera is also mixed with water as a digestive.
-</div>
+          <div style="margin-top:0.5rem;"><span class="fg-tag">Alcohol (OH) - multiple</span><span class="fg-tag">Ether (C-O-C)</span><span class="fg-tag">Ester (acetyl group)</span></div>
+          <div class="fg-analysis"><strong>Functional Group Analysis:</strong> Acemannan is full of hydroxyl (OH) groups on every sugar molecule. These OH groups form hydrogen bonds with water molecules, which makes the aloe gel so soluble in water and hydrating. Each sugar molecule is connected to the next through ether linkages (C-O-C bonds), called glycosidic bonds. The acetyl groups (esters, C=O bonded to O) attached to the sugars are what give acemannan its immune stimulative properties.</div>
+          <div class="real-use-box"><strong>Real-life uses in San Luis Potosi:</strong> Aloe vera grows in many gardens across San Luis Potosi due to our semi arid climate. It is normally sliced open, and the gel is applied directly to sunburns and minor cuts. The hydroxyl groups in acemannan create a hydrating film on the skin, while the polysaccharide chains keep the skin moisturized. In the Huasteca Potosina, aloe vera is also mixed with water as a digestive.</div>
         </div>
       </div>
     </div>
-
+ 
     <!-- GERANIUM -->
     <div class="sp-card" data-photo="geranium">
       <div class="sp-header">
@@ -1423,8 +1442,7 @@ footer strong { color: var(--lime); }
         <span class="sp-tag">Ornamental</span>
         <span class="sp-tag">Perfume source</span>
         <span class="sp-tag">Insect repellent</span>
-        <p class="sp-text">Those colorful red flowers that contrast the tire pot. The red color comes from anthocyanins, pigments that act as pH indicators. If you put a petal in acid, it turns pinker; in a base, it turns bluer.
-</p>
+        <p class="sp-text">Those colorful red flowers that contrast the tire pot. The red color comes from anthocyanins, pigments that act as pH indicators. If you put a petal in acid, it turns pinker; in a base, it turns bluer.</p>
         <div class="molecule-box">
           <div class="mol-title">Key Molecules</div>
           <div class="mol-name">Geraniol + Anthocyanin</div>
@@ -1444,35 +1462,24 @@ footer strong { color: var(--lime); }
               <line x1="190" y1="70" x2="230" y2="50" stroke="#333" stroke-width="2"/>
               <line x1="193" y1="65" x2="227" y2="47" stroke="#333" stroke-width="2"/>
               <line x1="230" y1="50" x2="270" y2="70" stroke="#333" stroke-width="2"/>
-              <!-- OH group -->
               <line x1="30" y1="70" x2="30" y2="100" stroke="#cc0000" stroke-width="2"/>
               <text x="20" y="115" font-family="JetBrains Mono" font-size="13" fill="#cc0000" font-weight="bold">OH</text>
-              <!-- Methyl branches -->
               <line x1="230" y1="50" x2="230" y2="20" stroke="#333" stroke-width="2"/>
               <text x="220" y="15" font-family="JetBrains Mono" font-size="11" fill="#333">CH3</text>
               <text x="272" y="74" font-family="JetBrains Mono" font-size="11" fill="#333">CH3</text>
               <line x1="110" y1="70" x2="110" y2="100" stroke="#333" stroke-width="2"/>
               <text x="100" y="113" font-family="JetBrains Mono" font-size="11" fill="#333">CH3</text>
-              <!-- Highlight -->
               <rect x="14" y="88" width="40" height="28" rx="5" fill="none" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="4,2"/>
               <text x="60" y="108" font-family="Nunito" font-size="9" fill="#cc0000">Alcohol (OH)</text>
             </svg>
           </div>
-          <div style="margin-top:0.5rem;">
-            <span class="fg-tag">Alcohol (OH)</span>
-            <span class="fg-tag">C=C double bonds</span>
-            <span class="fg-tag">Aromatic ring (anthocyanin)</span>
-          </div>
-          <div class="fg-analysis">
-            <strong>Functional Group Analysis:</strong>Geraniol, like linalool, is a monoterpene alcohol with an OH group and two C=C double bonds. Its structure is very similar to linalool but arranged differently in a trans configuration (it is mirrored on different sides of the double bond), giving it a distinctly rose like smell. The anthocyanin pigment has a completely different structure: it contains aromatic rings (the stable six carbon rings with alternating double bonds) fused together, plus multiple OH groups. The aromatic rings absorb specific types of light, that makes the flower look red. The OH groups on the aromatic ring can gain or lose protons depending on pH, which is why the color shifts in acidic or basic solutions.
-
-</div>
-          <div class="real-use-box">
-            <strong>Real-life uses in San Luis Potosi:</strong>Geraniums are one of the most popular garden plants in San Luis Potosi. The geraniol they produce naturally repels mosquitoes. Rose geranium essential oil is used in local spas and in the creation of natural cosmetics.</div>
+          <div style="margin-top:0.5rem;"><span class="fg-tag">Alcohol (OH)</span><span class="fg-tag">C=C double bonds</span><span class="fg-tag">Aromatic ring (anthocyanin)</span></div>
+          <div class="fg-analysis"><strong>Functional Group Analysis:</strong> Geraniol, like linalool, is a monoterpene alcohol with an OH group and two C=C double bonds. Its structure is very similar to linalool but arranged differently in a trans configuration (it is mirrored on different sides of the double bond), giving it a distinctly rose like smell. The anthocyanin pigment has a completely different structure: it contains aromatic rings (the stable six carbon rings with alternating double bonds) fused together, plus multiple OH groups. The aromatic rings absorb specific types of light, that makes the flower look red. The OH groups on the aromatic ring can gain or lose protons depending on pH, which is why the color shifts in acidic or basic solutions.</div>
+          <div class="real-use-box"><strong>Real-life uses in San Luis Potosi:</strong> Geraniums are one of the most popular garden plants in San Luis Potosi. The geraniol they produce naturally repels mosquitoes. Rose geranium essential oil is used in local spas and in the creation of natural cosmetics.</div>
         </div>
       </div>
     </div>
-
+ 
     <!-- MULBERRY -->
     <div class="sp-card" data-photo="mulberry">
       <div class="sp-header">
@@ -1497,25 +1504,19 @@ footer strong { color: var(--lime); }
           <div class="mol-structure">
             <div class="mol-structure-label">Resveratrol Structure</div>
             <svg viewBox="0 0 380 180" xmlns="http://www.w3.org/2000/svg">
-              <!-- Ring A -->
               <polygon points="60,50 90,35 120,50 120,80 90,95 60,80" fill="none" stroke="#333" stroke-width="2"/>
               <circle cx="90" cy="65" r="13" fill="none" stroke="#333" stroke-width="1.5"/>
-              <!-- OH on Ring A -->
               <line x1="60" y1="50" x2="35" y2="38" stroke="#cc0000" stroke-width="2"/>
               <text x="10" y="36" font-family="JetBrains Mono" font-size="11" fill="#cc0000">HO</text>
               <line x1="60" y1="80" x2="35" y2="92" stroke="#cc0000" stroke-width="2"/>
               <text x="10" y="96" font-family="JetBrains Mono" font-size="11" fill="#cc0000">HO</text>
-              <!-- Trans double bond bridge -->
               <line x1="120" y1="65" x2="160" y2="65" stroke="#333" stroke-width="2"/>
               <line x1="160" y1="65" x2="200" y2="65" stroke="#333" stroke-width="2"/>
               <line x1="162" y1="60" x2="198" y2="60" stroke="#333" stroke-width="2"/>
-              <!-- Ring B -->
               <polygon points="200,50 230,35 260,50 260,80 230,95 200,80" fill="none" stroke="#333" stroke-width="2"/>
               <circle cx="230" cy="65" r="13" fill="none" stroke="#333" stroke-width="1.5"/>
-              <!-- OH on Ring B -->
               <line x1="260" y1="65" x2="290" y2="65" stroke="#cc0000" stroke-width="2"/>
               <text x="292" y="69" font-family="JetBrains Mono" font-size="11" fill="#cc0000">OH</text>
-              <!-- Labels -->
               <text x="70" y="130" font-family="Nunito" font-size="9" fill="#5a7a5a">Ring A (two OH groups)</text>
               <text x="200" y="130" font-family="Nunito" font-size="9" fill="#5a7a5a">Ring B (one OH)</text>
               <text x="130" y="145" font-family="Nunito" font-size="9" fill="#5a7a5a">Trans C=C bridge</text>
@@ -1524,19 +1525,13 @@ footer strong { color: var(--lime); }
               <rect x="288" y="56" width="30" height="18" rx="3" fill="none" stroke="#cc0000" stroke-width="1" stroke-dasharray="3,2"/>
             </svg>
           </div>
-          <div style="margin-top:0.5rem;">
-            <span class="fg-tag">Aromatic rings (x2)</span>
-            <span class="fg-tag">Alcohol/Phenol (OH x3)</span>
-            <span class="fg-tag">C=C double bond</span>
-          </div>
-          <div class="fg-analysis">
-            <strong>Functional Group Analysis:</strong>Resveratrol has two aromatic rings connected by a carbon-carbon double bond bridge. It has three hydroxyl (OH) groups attached directly to the aromatic rings, making them phenols. These phenol groups are the key to resveratrol's antioxidant power: they can donate hydrogen atoms to neutralize free radicals (unstable molecules that damage cells). The aromatic rings provide stability through a phenomenon called resonance (the electrons are shared across the entire ring, making the molecule very stable even after donating a hydrogen) this also gives resveratrol the ability to absorb UV light, protecting the plant.</div>
-          <div class="real-use-box">
-            <strong>Real-life uses in San Luis Potosi:</strong>Mulberries are easy to grow in San Luis; the fruit can be eaten fresh or made into jams. Resveratrol supplements are sold across the country as antioxidants. In traditional uses, mulberry leaf tea has been consumed in many cultures. They are also a common food for silkworms.</div>
+          <div style="margin-top:0.5rem;"><span class="fg-tag">Aromatic rings (x2)</span><span class="fg-tag">Alcohol/Phenol (OH x3)</span><span class="fg-tag">C=C double bond</span></div>
+          <div class="fg-analysis"><strong>Functional Group Analysis:</strong> Resveratrol has two aromatic rings connected by a carbon-carbon double bond bridge. It has three hydroxyl (OH) groups attached directly to the aromatic rings, making them phenols. These phenol groups are the key to resveratrol's antioxidant power: they can donate hydrogen atoms to neutralize free radicals (unstable molecules that damage cells). The aromatic rings provide stability through a phenomenon called resonance (the electrons are shared across the entire ring, making the molecule very stable even after donating a hydrogen) this also gives resveratrol the ability to absorb UV light, protecting the plant.</div>
+          <div class="real-use-box"><strong>Real-life uses in San Luis Potosi:</strong> Mulberries are easy to grow in San Luis; the fruit can be eaten fresh or made into jams. Resveratrol supplements are sold across the country as antioxidants. In traditional uses, mulberry leaf tea has been consumed in many cultures. They are also a common food for silkworms.</div>
         </div>
       </div>
     </div>
-
+ 
     <!-- LIME TREE -->
     <div class="sp-card" data-photo="lime">
       <div class="sp-header">
@@ -1561,45 +1556,34 @@ footer strong { color: var(--lime); }
           <div class="mol-structure">
             <div class="mol-structure-label">D-Limonene Structure (Cyclic Monoterpene)</div>
             <svg viewBox="0 0 340 160" xmlns="http://www.w3.org/2000/svg">
-              <!-- Cyclohexene ring -->
               <polygon points="120,30 160,20 190,45 180,85 140,95 110,70" fill="none" stroke="#333" stroke-width="2"/>
-              <!-- Double bond in ring -->
               <line x1="122" y1="35" x2="155" y2="25" stroke="#333" stroke-width="1.5" stroke-dasharray="4,3"/>
-              <!-- Isopropenyl group -->
               <line x1="190" y1="45" x2="230" y2="30" stroke="#333" stroke-width="2"/>
               <line x1="230" y1="30" x2="260" y2="45" stroke="#333" stroke-width="2"/>
               <line x1="230" y1="30" x2="230" y2="5" stroke="#333" stroke-width="2"/>
               <line x1="233" y1="33" x2="233" y2="10" stroke="#333" stroke-width="2"/>
               <text x="220" y="0" font-family="JetBrains Mono" font-size="11" fill="#333">CH2</text>
               <text x="262" y="50" font-family="JetBrains Mono" font-size="11" fill="#333">CH3</text>
-              <!-- Methyl on ring -->
               <line x1="120" y1="30" x2="95" y2="15" stroke="#333" stroke-width="2"/>
               <text x="75" y="12" font-family="JetBrains Mono" font-size="11" fill="#333">CH3</text>
-              <!-- Note -->
               <text x="50" y="140" font-family="Nunito" font-size="10" fill="#5a7a5a">Pure hydrocarbon with no oxygen, so it's nonpolar and has a volatile scent</text>
             </svg>
           </div>
           <div class="mol-structure" style="margin-top:0.5rem;">
             <div class="mol-structure-label">Ascorbic Acid (Vitamin C) Structure</div>
             <svg viewBox="0 0 340 180" xmlns="http://www.w3.org/2000/svg">
-              <!-- Lactone ring (5-membered) -->
               <line x1="100" y1="60" x2="140" y2="40" stroke="#333" stroke-width="2"/>
               <line x1="140" y1="40" x2="170" y2="60" stroke="#333" stroke-width="2"/>
               <line x1="170" y1="60" x2="160" y2="100" stroke="#333" stroke-width="2"/>
               <line x1="160" y1="100" x2="120" y2="100" stroke="#333" stroke-width="2"/>
               <text x="108" y="86" font-family="JetBrains Mono" font-size="13" fill="#cc0000">O</text>
-              <!-- Carbonyl (ester/lactone) -->
               <line x1="100" y1="60" x2="75" y2="45" stroke="#cc0000" stroke-width="2"/>
               <line x1="100" y1="55" x2="78" y2="42" stroke="#cc0000" stroke-width="2"/>
               <text x="55" y="40" font-family="JetBrains Mono" font-size="12" fill="#cc0000">O</text>
-              <!-- Enediol OHs -->
               <line x1="140" y1="40" x2="140" y2="15" stroke="#cc0000" stroke-width="2"/>
               <text x="130" y="12" font-family="JetBrains Mono" font-size="11" fill="#cc0000">OH</text>
               <line x1="170" y1="60" x2="200" y2="48" stroke="#cc0000" stroke-width="2"/>
               <text x="202" y="46" font-family="JetBrains Mono" font-size="11" fill="#cc0000">OH</text>
-              <!-- Side chain -->
-              <line x1="160" y1="100" x2="185" y2="120" stroke="#333" stroke-width="2"/>
-              <text x="178" y="118" font-family="JetBrains Mono" font-size="11" fill="#333">H</text>
               <line x1="160" y1="100" x2="175" y2="135" stroke="#333" stroke-width="2"/>
               <line x1="175" y1="135" x2="175" y2="158" stroke="#cc0000" stroke-width="2"/>
               <text x="165" y="170" font-family="JetBrains Mono" font-size="11" fill="#cc0000">OH</text>
@@ -1607,26 +1591,18 @@ footer strong { color: var(--lime); }
               <text x="212" y="148" font-family="JetBrains Mono" font-size="11" fill="#333">CH2</text>
               <line x1="240" y1="145" x2="260" y2="158" stroke="#cc0000" stroke-width="2"/>
               <text x="262" y="162" font-family="JetBrains Mono" font-size="11" fill="#cc0000">OH</text>
-              <!-- Labels -->
               <text x="40" y="70" font-family="Nunito" font-size="9" fill="#cc0000">Ester (lactone)</text>
               <text x="15" y="160" font-family="Nunito" font-size="9" fill="#5a7a5a">Multiple OH groups make it water-soluble</text>
               <text x="15" y="172" font-family="Nunito" font-size="9" fill="#5a7a5a">Enediol makes it a strong antioxidant</text>
             </svg>
           </div>
-          <div style="margin-top:0.5rem;">
-            <span class="fg-tag">C=C double bond (limonene)</span>
-            <span class="fg-tag">Alcohol (OH, Vit C)</span>
-            <span class="fg-tag">Ester/Lactone (Vit C)</span>
-            <span class="fg-tag">Carboxylic acid character</span>
-          </div>
-          <div class="fg-analysis">
-            <strong>Functional Group Analysis:</strong>Limonene is an interesting compound because it is a pure hydrocarbon and it has NO oxygen-containing functional groups at all. It only has carbon and hydrogen, and one C=C double bond in the ring and one outside it. This makes it nonpolar, which is the reason why it evaporates so easily into the air as a scent and why it is an excellent solvent for grease. Ascorbic acid (Vitamin C) is the opposite: it has four hydroxyl (OH) groups and an ester (lactone ring, where the C=O is part of a closed ring with an oxygen). All those OH groups make it super soluble in water, which is why it dissolves perfectly in lime juice. The enediol group (two adjacent C=C-OH groups) is what gives Vitamin C its antioxidant properties, it can easily donate electrons to neutralize harmful free radicals.</div>
-          <div class="real-use-box">
-            <strong>Real-life uses in San Luis Potosi:</strong>Limes are fundamental to the food of San Luis Potosi and Mexico in general, the Vitamin C in limes historically prevented scurvy. Today, limonene extracted from citrus peels is used in household cleaners because its nonpolar nature that is able to dissolve grease.</div>
+          <div style="margin-top:0.5rem;"><span class="fg-tag">C=C double bond (limonene)</span><span class="fg-tag">Alcohol (OH, Vit C)</span><span class="fg-tag">Ester/Lactone (Vit C)</span><span class="fg-tag">Carboxylic acid character</span></div>
+          <div class="fg-analysis"><strong>Functional Group Analysis:</strong> Limonene is an interesting compound because it is a pure hydrocarbon and it has NO oxygen-containing functional groups at all. It only has carbon and hydrogen, and one C=C double bond in the ring and one outside it. This makes it nonpolar, which is the reason why it evaporates so easily into the air as a scent and why it is an excellent solvent for grease. Ascorbic acid (Vitamin C) is the opposite: it has four hydroxyl (OH) groups and an ester (lactone ring, where the C=O is part of a closed ring with an oxygen). All those OH groups make it super soluble in water, which is why it dissolves perfectly in lime juice. The enediol group (two adjacent C=C-OH groups) is what gives Vitamin C its antioxidant properties, it can easily donate electrons to neutralize harmful free radicals.</div>
+          <div class="real-use-box"><strong>Real-life uses in San Luis Potosi:</strong> Limes are fundamental to the food of San Luis Potosi and Mexico in general, the Vitamin C in limes historically prevented scurvy. Today, limonene extracted from citrus peels is used in household cleaners because its nonpolar nature that is able to dissolve grease.</div>
         </div>
       </div>
     </div>
-
+ 
     <!-- TOMATO -->
     <div class="sp-card" data-photo="tomato">
       <div class="sp-header">
@@ -1639,23 +1615,19 @@ footer strong { color: var(--lime); }
         <span class="sp-tag">Food</span>
         <span class="sp-tag">Heart Health</span>
         <span class="sp-tag">Antioxidant</span>
-        <p class="sp-text">Tomatoes are technically a fruit, but they are normally used as vegetables in cooking. Their red color comes from lycopene, one of the most powerful antioxidants in plants.
-</p>
+        <p class="sp-text">Tomatoes are technically a fruit, but they are normally used as vegetables in cooking. Their red color comes from lycopene, one of the most powerful antioxidants in plants.</p>
         <div class="molecule-box">
           <div class="mol-title">Key Molecule</div>
           <div class="mol-name">Lycopene</div>
           <div class="mol-formula">C40H56 (a carotenoid)</div>
-          <div class="mol-desc">Lycopene has 11 conjugated double bonds (alternating single and double bonds in a row), which is what makes it so effective at neutralizing free radicals. Cooking actually increases lycopene because heat breaks down cell walls and releases lycopene from inside cells.
-</div>
+          <div class="mol-desc">Lycopene has 11 conjugated double bonds (alternating single and double bonds in a row), which is what makes it so effective at neutralizing free radicals. Cooking actually increases lycopene because heat breaks down cell walls and releases lycopene from inside cells.</div>
         </div>
         <button class="expand-toggle" onclick="this.nextElementSibling.classList.toggle('open'); this.textContent = this.nextElementSibling.classList.contains('open') ? 'Hide structure and analysis' : 'Show structure and analysis'">Show structure and analysis</button>
         <div class="expand-content">
           <div class="mol-structure">
             <div class="mol-structure-label">Lycopene: A Long Conjugated Hydrocarbon</div>
             <svg viewBox="0 0 400 80" xmlns="http://www.w3.org/2000/svg">
-              <!-- Simplified zigzag chain with alternating double bonds -->
               <polyline points="10,50 30,30 50,50 70,30 90,50 110,30 130,50 150,30 170,50 190,30 210,50 230,30 250,50 270,30 290,50 310,30 330,50 350,30 370,50 390,30" fill="none" stroke="#cc3333" stroke-width="2"/>
-              <!-- Double bond indicators -->
               <line x1="32" y1="35" x2="48" y2="45" stroke="#cc3333" stroke-width="1.5" stroke-dasharray="3,2"/>
               <line x1="72" y1="35" x2="88" y2="45" stroke="#cc3333" stroke-width="1.5" stroke-dasharray="3,2"/>
               <line x1="112" y1="35" x2="128" y2="45" stroke="#cc3333" stroke-width="1.5" stroke-dasharray="3,2"/>
@@ -1668,18 +1640,13 @@ footer strong { color: var(--lime); }
               <text x="100" y="75" font-family="Nunito" font-size="10" fill="#5a7a5a">11 conjugated C=C double bonds = absorbs visible light (red color)</text>
             </svg>
           </div>
-          <div style="margin-top:0.5rem;">
-            <span class="fg-tag">C=C double bonds (x11)</span>
-            <span class="fg-tag">Pure hydrocarbon (no O or N)</span>
-          </div>
-          <div class="fg-analysis">
-            <strong>Functional Group Analysis:</strong>Lycopene is weird because it contains NO oxygen, nitrogen, or any other atoms apart from carbon and hydrogen. It is a pure hydrocarbon chain of 40 carbons with 11 conjugated double bonds. This allows the molecule to absorb blue and green light which gives tomatoes their distinct red color. The lack of any polar functional groups makes lycopene fat-soluble and not water-soluble, that is why cooking tomatoes with a little oil dramatically increases how much lycopene your body can absorb.</div>
-          <div class="real-use-box">
-            <strong>Real-life uses in San Luis Potosi:</strong>Tomatoes are very normal in gardens and in the agricultural regions of San Luis. In local dishes like salsa roja and salsa de chile de arbol, the tomatoes are roasted first therefore releasing more lycopene from the cells. Some studies suggest that diets that contain lycopene are linked with lower risk of certain conditions.</div>
+          <div style="margin-top:0.5rem;"><span class="fg-tag">C=C double bonds (x11)</span><span class="fg-tag">Pure hydrocarbon (no O or N)</span></div>
+          <div class="fg-analysis"><strong>Functional Group Analysis:</strong> Lycopene is weird because it contains NO oxygen, nitrogen, or any other atoms apart from carbon and hydrogen. It is a pure hydrocarbon chain of 40 carbons with 11 conjugated double bonds. This allows the molecule to absorb blue and green light which gives tomatoes their distinct red color. The lack of any polar functional groups makes lycopene fat-soluble and not water-soluble, that is why cooking tomatoes with a little oil dramatically increases how much lycopene your body can absorb.</div>
+          <div class="real-use-box"><strong>Real-life uses in San Luis Potosi:</strong> Tomatoes are very normal in gardens and in the agricultural regions of San Luis. In local dishes like salsa roja and salsa de chile de arbol, the tomatoes are roasted first therefore releasing more lycopene from the cells. Some studies suggest that diets that contain lycopene are linked with lower risk of certain conditions.</div>
         </div>
       </div>
     </div>
-
+ 
     <!-- PARSLEY & MINT -->
     <div class="sp-card" data-photo="herbs">
       <div class="sp-header">
@@ -1704,39 +1671,29 @@ footer strong { color: var(--lime); }
           <div class="mol-structure">
             <div class="mol-structure-label">Menthol Structure (Cyclic Terpene Alcohol)</div>
             <svg viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
-              <!-- Cyclohexane ring in chair-like representation -->
               <polygon points="100,50 150,35 190,55 190,95 150,115 100,100" fill="none" stroke="#333" stroke-width="2"/>
-              <!-- OH group -->
               <line x1="190" y1="95" x2="225" y2="110" stroke="#cc0000" stroke-width="2"/>
               <text x="228" y="114" font-family="JetBrains Mono" font-size="13" fill="#cc0000" font-weight="bold">OH</text>
-              <!-- Methyl group -->
               <line x1="150" y1="35" x2="150" y2="12" stroke="#333" stroke-width="2"/>
               <text x="138" y="10" font-family="JetBrains Mono" font-size="11" fill="#333">CH3</text>
-              <!-- Isopropyl -->
               <line x1="100" y1="50" x2="65" y2="35" stroke="#333" stroke-width="2"/>
               <text x="50" y="32" font-family="JetBrains Mono" font-size="11" fill="#333">CH</text>
               <line x1="55" y1="35" x2="35" y2="20" stroke="#333" stroke-width="2"/>
               <text x="10" y="18" font-family="JetBrains Mono" font-size="10" fill="#333">CH3</text>
               <line x1="55" y1="35" x2="35" y2="50" stroke="#333" stroke-width="2"/>
               <text x="10" y="54" font-family="JetBrains Mono" font-size="10" fill="#333">CH3</text>
-              <!-- Highlight -->
               <rect x="222" y="98" width="35" height="20" rx="4" fill="none" stroke="#cc0000" stroke-width="1.5" stroke-dasharray="4,2"/>
               <text x="60" y="150" font-family="Nunito" font-size="10" fill="#5a7a5a">Cyclohexane ring + alcohol = terpene alcohol</text>
               <text x="60" y="165" font-family="Nunito" font-size="10" fill="#5a7a5a">OH group interacts with cold receptors</text>
             </svg>
           </div>
-          <div style="margin-top:0.5rem;">
-            <span class="fg-tag">Alcohol (OH)</span>
-            <span class="fg-tag">Cyclohexane ring</span>
-          </div>
-          <div class="fg-analysis">
-            <strong>Functional Group Analysis:</strong>Menthol has a cyclohexane ring (a six-carbon ring with all single bonds, so it isn't aromatic) with an alcohol (OH) group, a methyl group, and an isopropyl group (carbons in a Y configuration) attached to it. The OH group is the one behind its biological properties, it is positioned in a three dimensional arrangement that makes it fit perfectly into the TRPM8 cold receptor, the molecule is also moderately nonpolar thanks to the hydrocarbon ring and its branches, thus menthol evaporates easily and you can smell it.</div>
-          <div class="real-use-box">
-            <strong>Real-life uses in San Luis Potosi:</strong>Mint (hierbabuena) is an essential herb in cooking, used in prepared waters and as a garnish. Menthol is the active ingredient in products like VapoRub and cough drops, many apothecaries (yerberos) recommend mint tea for digestion, which has scientific sense because menthol relaxes smooth muscles in the digestive tract.</div>
+          <div style="margin-top:0.5rem;"><span class="fg-tag">Alcohol (OH)</span><span class="fg-tag">Cyclohexane ring</span></div>
+          <div class="fg-analysis"><strong>Functional Group Analysis:</strong> Menthol has a cyclohexane ring (a six-carbon ring with all single bonds, so it isn't aromatic) with an alcohol (OH) group, a methyl group, and an isopropyl group (carbons in a Y configuration) attached to it. The OH group is the one behind its biological properties, it is positioned in a three dimensional arrangement that makes it fit perfectly into the TRPM8 cold receptor, the molecule is also moderately nonpolar thanks to the hydrocarbon ring and its branches, thus menthol evaporates easily and you can smell it.</div>
+          <div class="real-use-box"><strong>Real-life uses in San Luis Potosi:</strong> Mint (hierbabuena) is an essential herb in cooking, used in prepared waters and as a garnish. Menthol is the active ingredient in products like VapoRub and cough drops, many apothecaries (yerberos) recommend mint tea for digestion, which has scientific sense because menthol relaxes smooth muscles in the digestive tract.</div>
         </div>
       </div>
     </div>
-
+ 
     <!-- CASSAVA -->
     <div class="sp-card" data-photo="cassava">
       <div class="sp-header">
@@ -1761,37 +1718,30 @@ footer strong { color: var(--lime); }
           <div class="mol-structure">
             <div class="mol-structure-label">Linamarin Structure (Cyanogenic Glycoside)</div>
             <svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-              <!-- Glucose ring -->
               <line x1="120" y1="80" x2="160" y2="60" stroke="#333" stroke-width="2"/>
               <line x1="160" y1="60" x2="200" y2="80" stroke="#333" stroke-width="2"/>
               <line x1="200" y1="80" x2="200" y2="120" stroke="#333" stroke-width="2"/>
               <line x1="200" y1="120" x2="160" y2="140" stroke="#333" stroke-width="2"/>
               <line x1="160" y1="140" x2="120" y2="120" stroke="#333" stroke-width="2"/>
               <text x="108" y="105" font-family="JetBrains Mono" font-size="12" fill="#cc0000">O</text>
-              <!-- OH groups on sugar -->
               <line x1="160" y1="60" x2="160" y2="38" stroke="#cc0000" stroke-width="2"/>
               <text x="150" y="34" font-family="JetBrains Mono" font-size="10" fill="#cc0000">OH</text>
               <line x1="200" y1="80" x2="228" y2="68" stroke="#cc0000" stroke-width="2"/>
               <text x="230" y="66" font-family="JetBrains Mono" font-size="10" fill="#cc0000">OH</text>
               <line x1="160" y1="140" x2="160" y2="165" stroke="#cc0000" stroke-width="2"/>
               <text x="150" y="178" font-family="JetBrains Mono" font-size="10" fill="#cc0000">OH</text>
-              <!-- Glycosidic bond (ether) to aglycone -->
               <line x1="120" y1="80" x2="88" y2="65" stroke="#0066cc" stroke-width="2.5"/>
               <text x="76" y="60" font-family="JetBrains Mono" font-size="11" fill="#0066cc">O</text>
-              <!-- Aglycone part -->
               <line x1="76" y1="55" x2="58" y2="45" stroke="#333" stroke-width="2"/>
               <text x="46" y="42" font-family="JetBrains Mono" font-size="10" fill="#333">C</text>
-              <!-- CN (nitrile) group -->
               <line x1="50" y1="35" x2="50" y2="15" stroke="#00c" stroke-width="2"/>
               <line x1="53" y1="35" x2="53" y2="15" stroke="#00c" stroke-width="2"/>
               <line x1="56" y1="35" x2="56" y2="15" stroke="#00c" stroke-width="2"/>
               <text x="42" y="10" font-family="JetBrains Mono" font-size="12" fill="#00c" font-weight="bold">N</text>
-              <!-- Methyl groups on aglycone C -->
               <line x1="48" y1="45" x2="28" y2="55" stroke="#333" stroke-width="2"/>
               <text x="8" y="60" font-family="JetBrains Mono" font-size="10" fill="#333">CH3</text>
               <line x1="48" y1="45" x2="28" y2="35" stroke="#333" stroke-width="2"/>
               <text x="8" y="32" font-family="JetBrains Mono" font-size="10" fill="#333">CH3</text>
-              <!-- Annotations -->
               <text x="255" y="80" font-family="Nunito" font-size="10" fill="#5a7a5a">Sugar (glucose) provides</text>
               <text x="255" y="93" font-family="Nunito" font-size="10" fill="#5a7a5a">water solubility (OH groups)</text>
               <text x="255" y="115" font-family="Nunito" font-size="10" fill="#0066cc">Ether bond (glycosidic linkage)</text>
@@ -1800,19 +1750,13 @@ footer strong { color: var(--lime); }
               <text x="255" y="163" font-family="Nunito" font-size="10" fill="#00c">(releases HCN when broken)</text>
             </svg>
           </div>
-          <div style="margin-top:0.5rem;">
-            <span class="fg-tag">Ether (glycosidic bond)</span>
-            <span class="fg-tag">Alcohol (OH, on sugar)</span>
-            <span class="fg-tag">Nitrile (C triple N)</span>
-          </div>
-          <div class="fg-analysis">
-            <strong>Functional Group Analysis:</strong>Linamarin has two different parts, a glucose sugar and an aglycone (nonsugar part). The sugar has multiple hydroxyl (OH) groups making that portion water soluble. The sugar is connected to the rest of the molecule through a glycosidic bond (ether linkage (C-O-C)), The dangerous one is the nitrile group (carbon triple-bonded to nitrogen). When the enzyme linamarase breaks the ether bond connecting the sugar to the aglycone, the released fragment decomposes to release HCN (hydrogen cyanide).</div>
-          <div class="real-use-box">
-            <strong>Real-life uses in San Luis Potosi:</strong>Cassava is usually grown in the Huasteca Potosina region of SLP, the tuber is widely available in local markets. Yuca frita (fried cassava) is a popular side dish, and the proper cooking process ensures all cyanogenic compounds are destroyed. Tapioca, the starch extracted from cassava roots, is used in atole and other traditional drinks.</div>
+          <div style="margin-top:0.5rem;"><span class="fg-tag">Ether (glycosidic bond)</span><span class="fg-tag">Alcohol (OH, on sugar)</span><span class="fg-tag">Nitrile (C triple N)</span></div>
+          <div class="fg-analysis"><strong>Functional Group Analysis:</strong> Linamarin has two different parts, a glucose sugar and an aglycone (nonsugar part). The sugar has multiple hydroxyl (OH) groups making that portion water soluble. The sugar is connected to the rest of the molecule through a glycosidic bond (ether linkage (C-O-C)), The dangerous one is the nitrile group (carbon triple-bonded to nitrogen). When the enzyme linamarase breaks the ether bond connecting the sugar to the aglycone, the released fragment decomposes to release HCN (hydrogen cyanide).</div>
+          <div class="real-use-box"><strong>Real-life uses in San Luis Potosi:</strong> Cassava is usually grown in the Huasteca Potosina region of SLP, the tuber is widely available in local markets. Yuca frita (fried cassava) is a popular side dish, and the proper cooking process ensures all cyanogenic compounds are destroyed. Tapioca, the starch extracted from cassava roots, is used in atole and other traditional drinks.</div>
         </div>
       </div>
     </div>
-
+ 
     <!-- TORCH ALOE -->
     <div class="sp-card" data-photo="aloe-arborescens">
       <div class="sp-header">
@@ -1826,7 +1770,7 @@ footer strong { color: var(--lime); }
         <span class="sp-tag">Medicinal</span>
         <span class="sp-tag">Multiple flower spikes</span>
         <p class="sp-text">The large blue or grey succulent with many branching orangy red flower spikes. This is a DIFFERENT species from Aloe vera. While they are both in the Aloe genus, Aloe arborescens grows in a branching, tree form, in comparison Aloe vera forms a single rosette.</p>
-        <p class="sp-text" style="font-size:0.8rem; color:#7a5a00; background:#fff9e6; padding:0.5rem; border-radius:8px;"><strong>Why two Torch Aloes in the garden?</strong>Similar to the Aloe vera situation, one is in a vegetative state (just leaves) and one in its flowering state (with orange spikes). They are the same species at different stages, or they may simply be two separate plants of the same species growing in different pots.</p>
+        <p class="sp-text" style="font-size:0.8rem; color:#7a5a00; background:#fff9e6; padding:0.5rem; border-radius:8px;"><strong>Why two Torch Aloes in the garden?</strong> Similar to the Aloe vera situation, one is in a vegetative state (just leaves) and one in its flowering state (with orange spikes). They are the same species at different stages, or they may simply be two separate plants of the same species growing in different pots.</p>
         <div class="molecule-box">
           <div class="mol-title">Key Molecules</div>
           <div class="mol-name">Aloe-emodin + Aloin</div>
@@ -1838,61 +1782,44 @@ footer strong { color: var(--lime); }
           <div class="mol-structure">
             <div class="mol-structure-label">Aloe-emodin Structure (Anthraquinone)</div>
             <svg viewBox="0 0 380 170" xmlns="http://www.w3.org/2000/svg">
-              <!-- Three fused rings (anthraquinone) -->
-              <!-- Ring 1 (aromatic) -->
               <polygon points="40,50 70,35 100,50 100,80 70,95 40,80" fill="none" stroke="#333" stroke-width="2"/>
               <circle cx="70" cy="65" r="13" fill="none" stroke="#333" stroke-width="1.5"/>
-              <!-- Ring 2 (central, quinone - NOT aromatic, has C=O) -->
               <polygon points="100,50 130,35 160,50 160,80 130,95 100,80" fill="none" stroke="#333" stroke-width="2"/>
-              <!-- C=O on ring 2 -->
               <line x1="130" y1="35" x2="130" y2="12" stroke="#cc0000" stroke-width="2"/>
               <line x1="134" y1="35" x2="134" y2="12" stroke="#cc0000" stroke-width="2"/>
               <text x="124" y="8" font-family="JetBrains Mono" font-size="11" fill="#cc0000">O</text>
               <line x1="130" y1="95" x2="130" y2="118" stroke="#cc0000" stroke-width="2"/>
               <line x1="134" y1="95" x2="134" y2="118" stroke="#cc0000" stroke-width="2"/>
               <text x="124" y="130" font-family="Nunito" font-size="11" fill="#cc0000">O</text>
-              <!-- Ring 3 (aromatic) -->
               <polygon points="160,50 190,35 220,50 220,80 190,95 160,80" fill="none" stroke="#333" stroke-width="2"/>
               <circle cx="190" cy="65" r="13" fill="none" stroke="#333" stroke-width="1.5"/>
-              <!-- OH groups -->
               <line x1="40" y1="50" x2="15" y2="38" stroke="#cc0000" stroke-width="2"/>
               <text x="0" y="34" font-family="JetBrains Mono" font-size="10" fill="#cc0000">OH</text>
               <line x1="220" y1="50" x2="248" y2="38" stroke="#cc0000" stroke-width="2"/>
               <text x="250" y="35" font-family="JetBrains Mono" font-size="10" fill="#cc0000">OH</text>
-              <!-- CH2OH -->
               <line x1="220" y1="80" x2="250" y2="95" stroke="#333" stroke-width="2"/>
               <text x="252" y="98" font-family="JetBrains Mono" font-size="10" fill="#333">CH2</text>
               <line x1="278" y1="95" x2="298" y2="105" stroke="#cc0000" stroke-width="2"/>
               <text x="300" y="108" font-family="JetBrains Mono" font-size="10" fill="#cc0000">OH</text>
-              <!-- Labels -->
               <text x="40" y="155" font-family="Nunito" font-size="9" fill="#5a7a5a">3 fused rings = anthraquinone skeleton (circles = aromatic)</text>
               <text x="40" y="167" font-family="Nunito" font-size="9" fill="#cc0000">2 ketone C=O + 3 OH groups</text>
             </svg>
           </div>
-          <div style="margin-top:0.5rem;">
-            <span class="fg-tag">Aromatic rings (x3, fused)</span>
-            <span class="fg-tag">Ketone (C=O, x2)</span>
-            <span class="fg-tag">Alcohol (OH, x3)</span>
-          </div>
-          <div class="fg-analysis">
-            <strong>Functional Group Analysis:</strong> Aloe-emodin is built on an anthraquinone skeleton: three fused aromatic rings. The central ring has two ketone groups (C=O), making it a "quinone." This quinone structure is what gives the molecule its yellow-orange color (similar to how lycopene's conjugated system gives red color, the extended conjugation in anthraquinones absorbs light and produces color). The three hydroxyl (OH) groups on the outer rings and the CH2OH side chain provide some water solubility. The combination of aromatic rings and ketone groups allows aloe-emodin to intercalate (slide between) DNA base pairs, which is the mechanism behind its laboratory-demonstrated ability to interfere with rapidly dividing cells.
-          </div>
-          <div class="real-use-box">
-            <strong>Real-life uses in San Luis Potosi:</strong> Aloe arborescens is commonly grown as an ornamental succulent in SLP gardens. In traditional medicine across Latin America, the gel and latex of this plant have been used for skin conditions. The higher aloin content compared to Aloe vera means it should be used with more caution. Some local herbalists prepare tinctures from the leaves, though it is important to distinguish the clear inner gel (safe) from the yellow latex layer (contains aloin, a strong laxative).
-          </div>
+          <div style="margin-top:0.5rem;"><span class="fg-tag">Aromatic rings (x3, fused)</span><span class="fg-tag">Ketone (C=O, x2)</span><span class="fg-tag">Alcohol (OH, x3)</span></div>
+          <div class="fg-analysis"><strong>Functional Group Analysis:</strong> Aloe-emodin is built on an anthraquinone skeleton: three fused aromatic rings. The central ring has two ketone groups (C=O), making it a "quinone." This quinone structure is what gives the molecule its yellow-orange color (similar to how lycopene's conjugated system gives red color, the extended conjugation in anthraquinones absorbs light and produces color). The three hydroxyl (OH) groups on the outer rings and the CH2OH side chain provide some water solubility. The combination of aromatic rings and ketone groups allows aloe-emodin to intercalate (slide between) DNA base pairs, which is the mechanism behind its laboratory-demonstrated ability to interfere with rapidly dividing cells.</div>
+          <div class="real-use-box"><strong>Real-life uses in San Luis Potosi:</strong> Aloe arborescens is commonly grown as an ornamental succulent in SLP gardens. In traditional medicine across Latin America, the gel and latex of this plant have been used for skin conditions. The higher aloin content compared to Aloe vera means it should be used with more caution. Some local herbalists prepare tinctures from the leaves, though it is important to distinguish the clear inner gel (safe) from the yellow latex layer (contains aloin, a strong laxative).</div>
         </div>
       </div>
     </div>
-
+ 
   </div>
 </section>
-
-<!-- ══════════════════ CARBON ══════════════════ -->
+ 
+<!-- CARBON -->
 <section class="section" id="carbon">
   <div class="sec-label">Step 2: Carbon Storage</div>
   <h2 class="sec-title">How Our Garden <span>Captures Carbon</span></h2>
   <p class="sec-intro">48% of every dry leaf in mass is pure carbon. That carbon was obtained from CO2 in the air through photosynthesis. Our garden is actively removing carbon dioxide from the atmosphere, contributing positively to the environment.</p>
-
   <div class="viz-grid">
     <div class="chart-box">
       <div class="chart-title">Carbon Stored in Different Parts of a Tree</div>
@@ -1900,7 +1827,6 @@ footer strong { color: var(--lime); }
       <p style="font-size:0.72rem;color:#9aaa9a;margin-top:0.5rem;">Data based on urban tree carbon storage estimates. Source: Nowak et al. (2013), USDA Forest Service.</p>
     </div>
     <div>
-
       <div style="background:linear-gradient(135deg,#e8f4e0,#d0ead0);border-radius:20px;border:2px solid var(--lime);padding:1.5rem;">
         <div style="font-family:'Fredoka One',cursive;font-size:1rem;color:var(--green);margin-bottom:0.5rem;">Two Strategies for Carbon</div>
         <p style="font-size:0.88rem;color:#4a6a4a;line-height:1.7;">The dense leaves of our lavender bush have a low <span class="def-term" tabindex="0">SLA<span class="def-popup">SLA stands for Specific Leaf Area. It is a measurement of how much surface area a leaf has relative to its dry weight. Thick, dense leaves have low SLA (small area per gram). Thin, broad leaves have high SLA (large area per gram). It tells us about the plant's strategy for capturing light versus storing resources.</span></span> (they are thick and waxy), which means they store MORE carbon per unit of leaf area than thin leaves. Meanwhile, the mulberry tree has high SLA (thin, broad leaves), meaning each leaf is lightweight but catches more total light. Two different strategies, both effective at capturing carbon from the atmosphere.</p>
@@ -1908,14 +1834,13 @@ footer strong { color: var(--lime); }
     </div>
   </div>
 </section>
-
-<!-- ══════════════════ SOIL ══════════════════ -->
+ 
+<!-- SOIL -->
 <div class="soil-section" id="soil">
   <div class="soil-inner">
     <div class="sec-label">Step 3: Soil Chemistry</div>
     <h2 class="sec-title">Dark soil = <span>rich soil!</span></h2>
     <p class="sec-intro">The darker the soil, the more <span class="def-term" tabindex="0">organic matter<span class="def-popup">Soil Organic Matter (often abbreviated SOM or "Soil OM") is the portion of soil that comes from living things: decomposed leaves, roots, microorganisms, and humus. It is rich in carbon, nitrogen, and other nutrients. More organic matter = healthier, more fertile soil.</span></span> (humus) it contains. Click anywhere on the soil bar below to explore what is happening chemically at each shade.</p>
-
     <div class="soil-demo">
       <div class="soil-label-row">
         <span>Sandy / Low Organic Matter</span>
@@ -1927,11 +1852,8 @@ footer strong { color: var(--lime); }
       <div style="font-family:'JetBrains Mono',monospace;font-size:0.68rem;color:#9aaa9a;display:flex;justify-content:space-between;margin-bottom:1rem;">
         <span>~0.5% Organic Matter</span><span>~5% Organic Matter</span><span>>15% Organic Matter</span>
       </div>
-      <div class="soil-readout" id="soilReadout">
-        Click anywhere on the soil bar to explore the chemistry at that darkness level.
-      </div>
+      <div class="soil-readout" id="soilReadout">Click anywhere on the soil bar to explore the chemistry at that darkness level.</div>
     </div>
-
     <div style="margin-top:2rem;display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;">
       <div style="background:white;border-radius:16px;border:2px solid #e0f0d8;padding:1.25rem;">
         <div style="font-family:'Fredoka One',cursive;font-size:1rem;color:var(--green);">Water Holding Capacity</div>
@@ -1951,13 +1873,12 @@ footer strong { color: var(--lime); }
     </div>
   </div>
 </div>
-
-<!-- ══════════════════ SHADE ══════════════════ -->
+ 
+<!-- SHADE -->
 <section class="section" id="shade">
   <div class="sec-label">Step 4: Shade and Temperature</div>
   <h2 class="sec-title">Why is it <span>cooler under trees?</span></h2>
   <p class="sec-intro">It is not just about blocking sunlight. Trees cool the air through evapotranspiration: they release water vapor from their leaves, and the evaporation process absorbs heat energy from the surrounding air. Think of it as the same principle behind sweating. In a city like San Luis Potosi, where summer temperatures regularly exceed 35 degrees Celsius, this natural cooling is invaluable.</p>
-
   <div class="temp-grid">
     <div class="temp-box sun">
       <span class="temp-val" id="sunT">38 C</span>
@@ -1970,29 +1891,24 @@ footer strong { color: var(--lime); }
       <p class="temp-note">Evapotranspiration (which requires 2,260 kilojoules of energy per kilogram of water evaporated) plus shade makes the air under our lavender and mulberry noticeably cooler. That is real physics happening in our garden every day.</p>
     </div>
   </div>
-
   <div class="chart-box" style="margin-top:1.5rem;">
     <div class="chart-title">Daily Temperature: Bare Rock vs Plant Canopy in San Luis Potosi</div>
     <canvas id="tempChart" height="160"></canvas>
     <p style="font-size:0.7rem;color:#9aaa9a;margin-top:0.5rem;">Temperature data modeled from urban heat island studies. Source: US EPA Heat Islands program; Gill et al. (2007).</p>
   </div>
-
   <div style="background:linear-gradient(135deg,var(--dark),#1e4d2b);border-radius:20px;padding:1.75rem;margin-top:1.5rem;color:white;">
     <div style="font-family:'Fredoka One',cursive;font-size:1.2rem;color:var(--yellow);margin-bottom:0.75rem;">The Chemistry Behind Evapotranspiration</div>
-    <p style="font-size:0.9rem;line-height:1.8;color:rgba(255,255,255,0.8);">
-      When water evaporates from a leaf surface, it requires <strong style="color:var(--lime)">2,260 kilojoules of energy per kilogram</strong> of water. That energy comes from the surrounding air, cooling it down. Our aloe vera (using CAM photosynthesis) saves water by doing most of its gas exchange at night. Our mulberry and lavender transpire water throughout the day in the San Luis Potosi heat. A single mature tree can transpire <strong style="color:var(--lime)">200 to 400 litres per day</strong>, removing as much heat as several residential air conditioners.
-    </p>
+    <p style="font-size:0.9rem;line-height:1.8;color:rgba(255,255,255,0.8);">When water evaporates from a leaf surface, it requires <strong style="color:var(--lime)">2,260 kilojoules of energy per kilogram</strong> of water. That energy comes from the surrounding air, cooling it down. Our aloe vera (using CAM photosynthesis) saves water by doing most of its gas exchange at night. Our mulberry and lavender transpire water throughout the day in the San Luis Potosi heat. A single mature tree can transpire <strong style="color:var(--lime)">200 to 400 litres per day</strong>, removing as much heat as several residential air conditioners.</p>
     <p style="font-size:0.7rem;color:rgba(255,255,255,0.4);margin-top:0.5rem;">Source: US EPA, Trees and Heat Islands; USDA Forest Service, Tree Cooling Effects</p>
   </div>
 </section>
-
-<!-- ══════════════════ PHOTOSYNTHESIS ══════════════════ -->
+ 
+<!-- PHOTOSYNTHESIS -->
 <div class="chem-section" id="photosynthesis">
   <div class="chem-inner">
     <div class="sec-label" style="background:rgba(145,201,63,0.1);border-color:rgba(145,201,63,0.4);color:var(--lime);">Step 5: The Big Reaction</div>
     <h2 class="sec-title" style="color:white;">How does our garden eat <span style="color:var(--lime);">CO2?</span></h2>
     <p class="sec-intro" style="color:rgba(255,255,255,0.7);">Every single plant in our garden runs the same master reaction, photosynthesis. Click each card to learn more about the stages.</p>
-
     <div style="background:rgba(145,201,63,0.1);border:2px solid rgba(145,201,63,0.3);border-radius:20px;padding:1.75rem;margin:1.5rem 0;text-align:center;">
       <div style="font-family:'JetBrains Mono',monospace;font-size:1rem;color:white;line-height:2.2;">
         <span style="color:#57bfdf;">6 CO2</span> + <span style="color:#57bfdf;">6 H2O</span> + <span style="color:var(--yellow);">sunlight energy</span>
@@ -2001,384 +1917,142 @@ footer strong { color: var(--lime); }
       </div>
       <div style="font-family:'Nunito',sans-serif;font-size:0.85rem;color:rgba(255,255,255,0.6);margin-top:0.5rem;">carbon dioxide + water + sunlight -> glucose (sugar) + oxygen (the gas we breathe)</div>
     </div>
-
     <div class="chem-grid">
       <div class="chem-card" onclick="this.classList.toggle('open')">
         <h3>Light Reactions</h3>
         <span class="chem-eq">H2O -> O2 + 2H+ + 2e-</span>
         <p class="chem-text">In the chloroplasts (the green structures inside plant cells), chlorophyll (a molecule with a magnesium atom at its center) absorbs red and blue light. This energy splits water molecules, and the oxygen we breathe is a byproduct of this water-splitting reaction.</p>
-        <div class="chem-expand">
-          <p>Our lavender's grey-green leaves contain chlorophyll wrapped in a waxy coating. The wax reflects ultraviolet light, protecting the chlorophyll from damage. The anthocyanins in our geranium petals also act as a natural sunscreen for the chloroplasts underneath the petal surface. Every leaf is a tiny solar panel that also filters its own incoming radiation.</p>
-        </div>
+        <div class="chem-expand"><p>Our lavender's grey-green leaves contain chlorophyll wrapped in a waxy coating. The wax reflects ultraviolet light, protecting the chlorophyll from damage. The anthocyanins in our geranium petals also act as a natural sunscreen for the chloroplasts underneath the petal surface. Every leaf is a tiny solar panel that also filters its own incoming radiation.</p></div>
         <button class="expand-btn" onclick="event.stopPropagation()">Tell me more</button>
       </div>
-
       <div class="chem-card" onclick="this.classList.toggle('open')">
         <h3>Calvin Cycle</h3>
         <span class="chem-eq">CO2 + RuBP -> 2x 3-PGA</span>
         <p class="chem-text">In the second stage, the plant uses ATP (its energy currency molecule) to attach CO2 molecules together and build glucose. RuBisCO is the enzyme that catalyzes this reaction, and it is the most abundant protein on Earth.</p>
-        <div class="chem-expand">
-          <p>Our aloe vera uses CAM (Crassulacean Acid Metabolism), a special adaptation where it stores CO2 as malic acid at night, then releases it for the Calvin Cycle during the day with its stomata (leaf pores) closed. This saves water in the dry San Luis Potosi climate. The mulberry and tomato use the standard C3 pathway, keeping their stomata open during the day.</p>
-        </div>
+        <div class="chem-expand"><p>Our aloe vera uses CAM (Crassulacean Acid Metabolism), a special adaptation where it stores CO2 as malic acid at night, then releases it for the Calvin Cycle during the day with its stomata (leaf pores) closed. This saves water in the dry San Luis Potosi climate. The mulberry and tomato use the standard C3 pathway, keeping their stomata open during the day.</p></div>
         <button class="expand-btn" onclick="event.stopPropagation()">Tell me more</button>
       </div>
-
       <div class="chem-card" onclick="this.classList.toggle('open')">
         <h3>Glucose Becomes Everything</h3>
         <span class="chem-eq">C6H12O6 -> cellulose, lignin, terpenes...</span>
         <p class="chem-text">Once a plant makes glucose, it transforms it into everything else: wood (lignin), fiber (cellulose), scent (<span class="def-term" tabindex="0" style="color:var(--lime);border-color:rgba(255,255,255,0.3);">terpenes<span class="def-popup">Terpenes are a huge family of molecules made from 5-carbon building blocks called isoprene units. Plants produce them through the mevalonate pathway starting from glucose. They include scent molecules (linalool, geraniol, menthol, limonene), pigments (carotenoids like lycopene), and many medicines. Nearly all plant fragrances are terpenes.</span></span>), medicine (flavonoids), and color (anthocyanins).</p>
-        <div class="chem-expand">
-          <p>The linalool in our lavender is made through the mevalonate pathway, a metabolic route that converts glucose into terpenes. The geraniol in the geraniums uses the same pathway. The menthol in the mint is also a terpene. All of the amazing scents and medicines in our garden start with the same glucose molecule produced by photosynthesis. Carbon from the AIR becomes the medicine in the lavender oil.</p>
-        </div>
+        <div class="chem-expand"><p>The linalool in our lavender is made through the mevalonate pathway, a metabolic route that converts glucose into terpenes. The geraniol in the geraniums uses the same pathway. The menthol in the mint is also a terpene. All of the amazing scents and medicines in our garden start with the same glucose molecule produced by photosynthesis. Carbon from the AIR becomes the medicine in the lavender oil.</p></div>
         <button class="expand-btn" onclick="event.stopPropagation()">Tell me more</button>
       </div>
     </div>
   </div>
 </div>
-
-<!-- ══════════════════ CONSERVATION ══════════════════ -->
+ 
+<!-- CONSERVATION -->
 <div class="conservation-section" id="conservation">
   <div class="conservation-inner">
     <div class="sec-label" style="background:rgba(145,201,63,0.1);border-color:rgba(145,201,63,0.4);color:var(--lime);">Step 6: Protecting Green Spaces</div>
     <h2 class="sec-title" style="color:white;">The Lack of Regulation on <span style="color:var(--lime);">Harmful Chemicals</span></h2>
     <p style="font-size:1rem;color:rgba(255,255,255,0.75);max-width:700px;line-height:1.75;margin-bottom:1.5rem;">Herbicides and pesticides cannot distinguish between wanted and unwanted organisms because they target basic biological processes all living things share. What concerns us the most is their longevity, because they keep harming trees, crops, and people for years after being applied.</p>
-
-    <!-- STAT COUNTERS -->
     <div class="cons-stats" id="consStats">
-      <div class="cons-stat-box">
-        <span class="cons-stat-num" data-target="4.9" data-suffix="M">0</span>
-        <div class="cons-stat-label">deaths/year linked to chemical pollution (WHO)</div>
-      </div>
-      <div class="cons-stat-box">
-        <span class="cons-stat-num" data-target="86" data-suffix="M">0</span>
-        <div class="cons-stat-label">disabilities caused by environmental contamination</div>
-      </div>
-      <div class="cons-stat-box">
-        <span class="cons-stat-num" data-target="50" data-suffix="%+">0</span>
-        <div class="cons-stat-label">of SLP farmland already contaminated</div>
-      </div>
-      <div class="cons-stat-box">
-        <span class="cons-stat-num" data-target="30" data-suffix=" yrs">0</span>
-        <div class="cons-stat-label">pollutants persist in soil (UASLP)</div>
-      </div>
+      <div class="cons-stat-box"><span class="cons-stat-num" data-target="4.9" data-suffix="M">0</span><div class="cons-stat-label">deaths/year linked to chemical pollution (WHO)</div></div>
+      <div class="cons-stat-box"><span class="cons-stat-num" data-target="86" data-suffix="M">0</span><div class="cons-stat-label">disabilities caused by environmental contamination</div></div>
+      <div class="cons-stat-box"><span class="cons-stat-num" data-target="50" data-suffix="%+">0</span><div class="cons-stat-label">of SLP farmland already contaminated</div></div>
+      <div class="cons-stat-box"><span class="cons-stat-num" data-target="30" data-suffix=" yrs">0</span><div class="cons-stat-label">pollutants persist in soil (UASLP)</div></div>
     </div>
-
-    <!-- TABBED CONTENT -->
     <div class="cons-tabs" id="consTabs">
       <button class="cons-tab-btn active" onclick="consTab(0)">Health &amp; Trees</button>
       <button class="cons-tab-btn" onclick="consTab(1)">Our City</button>
       <button class="cons-tab-btn" onclick="consTab(2)">World Regulations</button>
       <button class="cons-tab-btn" onclick="consTab(3)">Garden Solutions</button>
     </div>
-
     <div class="cons-tab-panel active" id="consPanel0">
       <h3>How Pesticides Harm Both People and Trees</h3>
       <p style="margin-bottom:1rem;">Mostafalou &amp; Abdollahi (2013) linked pesticides to cancer, neurological diseases, and reproductive disorders. Hanková (2023) showed pesticides filter through soil into underground water banks, poisoning nearby trees and causing death or irreversible metabolic damage.</p>
       <p style="font-size:0.8rem;color:rgba(145,201,63,0.8);margin-bottom:0.8rem;font-weight:600;">Click each step to see how contamination spreads:</p>
-      <!-- CONTAMINATION PATH -->
       <div class="cons-path" id="consPath">
         <div class="cons-path-step active" onclick="consPathClick(this,0)">
           <div class="cons-path-icon">🧪</div>
           <div class="cons-path-name">Pesticide Applied</div>
-          <div class="cons-path-detail" id="pathDetail0">Herbicides are sprayed on crops. Their stable C-Cl bonds resist natural breakdown, unlike the biodegradable terpenes our plants produce.</div>
+          <div class="cons-path-detail">Herbicides are sprayed on crops. Their stable C-Cl bonds resist natural breakdown, unlike the biodegradable terpenes our plants produce.</div>
         </div>
         <div class="cons-path-arrow">→</div>
         <div class="cons-path-step" onclick="consPathClick(this,1)">
           <div class="cons-path-icon">🌍</div>
           <div class="cons-path-name">Soil Absorption</div>
-          <div class="cons-path-detail" id="pathDetail1">Chemicals seep into the ground and bind to soil particles. In SLP, pollutants stay in the soil for up to 30 years (UASLP).</div>
+          <div class="cons-path-detail">Chemicals seep into the ground and bind to soil particles. In SLP, pollutants stay in the soil for up to 30 years (UASLP).</div>
         </div>
         <div class="cons-path-arrow">→</div>
         <div class="cons-path-step" onclick="consPathClick(this,2)">
           <div class="cons-path-icon">💧</div>
           <div class="cons-path-name">Water Contamination</div>
-          <div class="cons-path-detail" id="pathDetail2">Rain carries chemicals deeper, reaching underground water reserves that connect to rivers and lakes. Our trees drink from that same water.</div>
+          <div class="cons-path-detail">Rain carries chemicals deeper, reaching underground water reserves that connect to rivers and lakes. Our trees drink from that same water.</div>
         </div>
         <div class="cons-path-arrow">→</div>
         <div class="cons-path-step" onclick="consPathClick(this,3)">
           <div class="cons-path-icon">🌳</div>
           <div class="cons-path-name">Trees &amp; People</div>
-          <div class="cons-path-detail" id="pathDetail3">Trees absorb contaminated water through their roots, and their metabolism changes in ways that cannot be reversed. People get exposed through water, food, and air every day.</div>
+          <div class="cons-path-detail">Trees absorb contaminated water through their roots, and their metabolism changes in ways that cannot be reversed. People get exposed through water, food, and air every day.</div>
         </div>
       </div>
     </div>
-
     <div class="cons-tab-panel" id="consPanel1">
       <h3>What Is Happening in San Luis Potosí</h3>
       <p>UASLP researchers found that chemical misuse contaminates both soil and underground water reserves. Chemist Juan Fernando Cárdenas González warns pollutants persist up to 30 years. Over half of the state's farmland is already contaminated, and this number keeps growing, which makes it harder for trees to survive and puts our garden at PrepaTec at constant risk.</p>
     </div>
-
     <div class="cons-tab-panel" id="consPanel2">
       <h3>How Different Countries Handle Chemical Regulation</h3>
       <p style="margin-bottom:1rem;">SDGs 3, 11, and 15 demand healthier environments and ecosystem protection. Many countries have acted, but SLP still has no program that safeguards urban trees.</p>
-      <!-- COUNTRY BARS -->
       <div class="cons-country-grid" id="consCountryGrid">
-        <div class="cons-country-row">
-          <span class="cons-country-name">EU</span>
-          <div class="cons-bar-track"><div class="cons-bar-fill" data-width="90" style="background:linear-gradient(90deg,#4caf50,#81c784);">Banned harmful insecticides</div></div>
-        </div>
-        <div class="cons-country-row">
-          <span class="cons-country-name">France</span>
-          <div class="cons-bar-track"><div class="cons-bar-fill" data-width="85" style="background:linear-gradient(90deg,#2196f3,#64b5f6);">Pesticides banned in urban zones</div></div>
-        </div>
-        <div class="cons-country-row">
-          <span class="cons-country-name">Canada</span>
-          <div class="cons-bar-track"><div class="cons-bar-fill" data-width="75" style="background:linear-gradient(90deg,#ff9800,#ffb74d);">Controlled on lawns &amp; urban trees</div></div>
-        </div>
-        <div class="cons-country-row">
-          <span class="cons-country-name">USA</span>
-          <div class="cons-bar-track"><div class="cons-bar-fill" data-width="65" style="background:linear-gradient(90deg,#9c27b0,#ba68c8);">Ecological risk assessment required</div></div>
-        </div>
-        <div class="cons-country-row">
-          <span class="cons-country-name">SLP, Mexico</span>
-          <div class="cons-bar-track"><div class="cons-bar-fill" data-width="12" style="background:linear-gradient(90deg,#f44336,#e57373);">No specific tree protection</div></div>
-        </div>
+        <div class="cons-country-row"><span class="cons-country-name">EU</span><div class="cons-bar-track"><div class="cons-bar-fill" data-width="90" style="background:linear-gradient(90deg,#4caf50,#81c784);">Banned harmful insecticides</div></div></div>
+        <div class="cons-country-row"><span class="cons-country-name">France</span><div class="cons-bar-track"><div class="cons-bar-fill" data-width="85" style="background:linear-gradient(90deg,#2196f3,#64b5f6);">Pesticides banned in urban zones</div></div></div>
+        <div class="cons-country-row"><span class="cons-country-name">Canada</span><div class="cons-bar-track"><div class="cons-bar-fill" data-width="75" style="background:linear-gradient(90deg,#ff9800,#ffb74d);">Controlled on lawns &amp; urban trees</div></div></div>
+        <div class="cons-country-row"><span class="cons-country-name">USA</span><div class="cons-bar-track"><div class="cons-bar-fill" data-width="65" style="background:linear-gradient(90deg,#9c27b0,#ba68c8);">Ecological risk assessment required</div></div></div>
+        <div class="cons-country-row"><span class="cons-country-name">SLP, Mexico</span><div class="cons-bar-track"><div class="cons-bar-fill" data-width="12" style="background:linear-gradient(90deg,#f44336,#e57373);">No specific tree protection</div></div></div>
       </div>
     </div>
-
     <div class="cons-tab-panel" id="consPanel3">
       <h3>Natural Alternatives from Our Own Garden</h3>
       <p style="margin-bottom:1rem;">Our garden already produces natural compounds that repel pests without lasting harm, and their bonds break down naturally in soil. Click each plant:</p>
-      <!-- PLANT CARDS -->
       <div class="cons-alt-grid">
-        <div class="cons-alt-card">
-          <span class="cons-alt-emoji">&#x1f49c;</span>
-          <div class="cons-alt-plant">Lavender</div>
-          <div class="cons-alt-compound">Linalool (C&#x2081;&#x2080;H&#x2081;&#x2088;O)</div>
-          <div class="cons-alt-effect">Natural insect repellent. Its C-H and C-O bonds are biodegradable and break down easily in soil</div>
-        </div>
-        <div class="cons-alt-card">
-          <span class="cons-alt-emoji">&#x1f33a;</span>
-          <div class="cons-alt-plant">Geranium</div>
-          <div class="cons-alt-compound">Geraniol (C&#x2081;&#x2080;H&#x2081;&#x2088;O)</div>
-          <div class="cons-alt-effect">Mosquito repellent. Unlike synthetic C-Cl bonds, it decomposes naturally</div>
-        </div>
-        <div class="cons-alt-card">
-          <span class="cons-alt-emoji">&#x1f34b;</span>
-          <div class="cons-alt-plant">Lime</div>
-          <div class="cons-alt-compound">Limonene (C&#x2081;&#x2080;H&#x2081;&#x2086;)</div>
-          <div class="cons-alt-effect">Natural solvent &amp; insecticide. Soil microorganisms break it down within days</div>
-        </div>
+        <div class="cons-alt-card"><span class="cons-alt-emoji">&#x1f49c;</span><div class="cons-alt-plant">Lavender</div><div class="cons-alt-compound">Linalool (C&#x2081;&#x2080;H&#x2081;&#x2088;O)</div><div class="cons-alt-effect">Natural insect repellent. Its C-H and C-O bonds are biodegradable and break down easily in soil</div></div>
+        <div class="cons-alt-card"><span class="cons-alt-emoji">&#x1f33a;</span><div class="cons-alt-plant">Geranium</div><div class="cons-alt-compound">Geraniol (C&#x2081;&#x2080;H&#x2081;&#x2088;O)</div><div class="cons-alt-effect">Mosquito repellent. Unlike synthetic C-Cl bonds, it decomposes naturally</div></div>
+        <div class="cons-alt-card"><span class="cons-alt-emoji">&#x1f34b;</span><div class="cons-alt-plant">Lime</div><div class="cons-alt-compound">Limonene (C&#x2081;&#x2080;H&#x2081;&#x2086;)</div><div class="cons-alt-effect">Natural solvent &amp; insecticide. Soil microorganisms break it down within days</div></div>
       </div>
     </div>
-
     <div style="background:rgba(145,201,63,0.15);border:2px solid rgba(145,201,63,0.4);border-radius:16px;padding:1.5rem;margin-top:1.5rem;text-align:center;">
       <div style="font-family:'Fredoka One',cursive;font-size:1.2rem;color:var(--lime);margin-bottom:0.5rem;">Why This Matters for Our Future</div>
       <p style="font-size:0.9rem;color:rgba(255,255,255,0.8);line-height:1.7;max-width:600px;margin:0 auto;">A practice is truly sustainable only when it doesn't risk the needs of the future. Be conscious about what goes into our soil. Start a garden, use natural pest control, and push for the regulation our city needs.</p>
     </div>
   </div>
 </div>
-
-
-<!-- ══════════════════ SOURCES ══════════════════ -->
+ 
+<!-- SOURCES -->
 <section class="section" id="sources">
   <div class="sec-label">Step 8: Every Source We Used</div>
   <h2 class="sec-title">Scientific <span>Sources and References</span></h2>
   <p class="sec-intro">Good science means showing your work. Here is every source used to build this platform, organized by the data or concept it supports. We also want to make clear that we did use AI (Claude by Anthropic) but only for the development of the webpage and the information gathering, each and every bit of information was reviewed by a human.</p>
-
   <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:1rem;">
-
-    <div class="source-card">
-      <h4>Plant Species Identification and Taxonomy</h4>
-      <div class="source-item">
-        <strong>General plant classification and species descriptions</strong>
-        <a href="https://www.kew.org/plants" target="_blank">https://www.kew.org/plants</a>
-      </div>
-      <div class="source-item">
-        <strong>Official USDA plant database for scientific names</strong>
-        <a href="https://plants.usda.gov" target="_blank">https://plants.usda.gov</a>
-      </div>
-      <div class="source-item">
-        <strong>Latin American botanical records (Tropicos)</strong>
-        <a href="https://www.tropicos.org" target="_blank">https://www.tropicos.org</a>
-      </div>
-      <div class="source-item">
-        <strong>Citizen science plant identification for Mexico</strong>
-        <a href="https://www.inaturalist.org" target="_blank">https://www.inaturalist.org</a>
-      </div>
-    </div>
-
-    <div class="source-card">
-      <h4>Molecular Structures and Chemical Formulas</h4>
-      <div class="source-item">
-        <strong>Linalool: molecular formula, structure, and properties</strong>
-        <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Linalool" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Linalool</a>
-      </div>
-      <div class="source-item">
-        <strong>Acemannan: polysaccharide structure data</strong>
-        <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Acemannan" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Acemannan</a>
-      </div>
-      <div class="source-item">
-        <strong>Geraniol: molecular formula and perfume chemistry</strong>
-        <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Geraniol" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Geraniol</a>
-      </div>
-      <div class="source-item">
-        <strong>Resveratrol: antioxidant structure data</strong>
-        <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Resveratrol" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Resveratrol</a>
-      </div>
-      <div class="source-item">
-        <strong>D-Limonene: citrus peel compound data</strong>
-        <a href="https://pubchem.ncbi.nlm.nih.gov/compound/d-Limonene" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/d-Limonene</a>
-      </div>
-      <div class="source-item">
-        <strong>Ascorbic acid (Vitamin C): structure and properties</strong>
-        <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic-acid" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic-acid</a>
-      </div>
-      <div class="source-item">
-        <strong>Lycopene: carotenoid structure data</strong>
-        <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Lycopene" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Lycopene</a>
-      </div>
-      <div class="source-item">
-        <strong>Menthol: cyclic terpene alcohol data</strong>
-        <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Menthol" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Menthol</a>
-      </div>
-      <div class="source-item">
-        <strong>Aloin: anthraquinone glycoside in aloe species</strong>
-        <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Aloin" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Aloin</a>
-      </div>
-      <div class="source-item">
-        <strong>Aloe-emodin: anthraquinone structure and properties</strong>
-        <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Aloe-emodin" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Aloe-emodin</a>
-      </div>
-      <div class="source-item">
-        <strong>Linamarin: cyanogenic glycoside data</strong>
-        <a href="https://pubchem.ncbi.nlm.nih.gov/compound/Linamarin" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Linamarin</a>
-      </div>
-    </div>
-
-    <div class="source-card">
-      <h4>Linalool and GABA Receptor Interaction</h4>
-      <div class="source-item">
-        <strong>Linalool anxiolytic effects and GABA modulation</strong>
-        <a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/linalool" target="_blank">https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/linalool</a>
-      </div>
-    </div>
-
-    <div class="source-card">
-      <h4>Acemannan Immune Properties</h4>
-      <div class="source-item">
-        <strong>Immune-modulating properties of acemannan from Aloe vera</strong>
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2763764/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2763764/</a>
-      </div>
-    </div>
-
-    <div class="source-card">
-      <h4>Aloe-emodin Anti-tumor Research</h4>
-      <div class="source-item">
-        <strong>Aloe arborescens review: aloe-emodin laboratory studies</strong>
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5920421/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5920421/</a>
-      </div>
-    </div>
-
-    <div class="source-card">
-      <h4>Cassava Toxicology and Processing</h4>
-      <div class="source-item">
-        <strong>FAO cassava processing and cyanide toxicology report</strong>
-        <a href="https://www.fao.org/3/T0207E/T0207E00.htm" target="_blank">https://www.fao.org/3/T0207E/T0207E00.htm</a>
-      </div>
-    </div>
-
-    <div class="source-card">
-      <h4>Carbon Storage and Leaf Carbon Content</h4>
-      <div class="source-item">
-        <strong>Carbon storage and sequestration by urban trees (Nowak et al. 2013)</strong>
-        <a href="https://www.nrs.fs.usda.gov/pubs/jrnl/2013/nrs_2013_nowak_001.pdf" target="_blank">https://www.nrs.fs.usda.gov/pubs/jrnl/2013/nrs_2013_nowak_001.pdf</a>
-      </div>
-      <div class="source-item">
-        <strong>Leaf dry mass approximately 47% carbon (global meta-analysis)</strong>
-        <a href="https://www.nature.com/articles/s41559-019-0857-y" target="_blank">https://www.nature.com/articles/s41559-019-0857-y</a>
-      </div>
-      <div class="source-item">
-        <strong>Plant carbon calculator tool (BGCI)</strong>
-        <a href="https://www.bgci.org/resources/bgci-tools-and-resources/plant-carbon-calculator/" target="_blank">https://www.bgci.org/resources/bgci-tools-and-resources/plant-carbon-calculator/</a>
-      </div>
-    </div>
-
-    <div class="source-card">
-      <h4>Photosynthesis and Calvin Cycle</h4>
-      <div class="source-item">
-        <strong>Light reactions and Calvin cycle educational reference</strong>
-        <a href="https://www.khanacademy.org/science/ap-biology/cellular-energetics/photosynthesis/a/steps-of-the-light-reactions" target="_blank">https://www.khanacademy.org/science/ap-biology/cellular-energetics/photosynthesis/a/steps-of-the-light-reactions</a>
-      </div>
-    </div>
-
-    <div class="source-card">
-      <h4>Soil Science: Organic Matter, CEC, and Water Retention</h4>
-      <div class="source-item">
-        <strong>Soil organic matter and CEC explained (USDA NRCS)</strong>
-        <a href="https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soils/soil-health" target="_blank">https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soils/soil-health</a>
-      </div>
-      <div class="source-item">
-        <strong>Humic acid chemistry and structure</strong>
-        <a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/humic-acid" target="_blank">https://www.sciencedirect.com/topics/earth-and-planetary-sciences/humic-acid</a>
-      </div>
-      <div class="source-item">
-        <strong>Soil organic matter water retention (+20,000 L/ha per 1% increase)</strong>
-        <a href="https://soilhealthinstitute.org" target="_blank">https://soilhealthinstitute.org</a>
-      </div>
-      <div class="source-item">
-        <strong>Decomposition rate model (Olson 1963)</strong>
-        <a href="https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1932179" target="_blank">https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1932179</a>
-      </div>
-    </div>
-
-    <div class="source-card">
-      <h4>Temperature, Shade, and Evapotranspiration</h4>
-      <div class="source-item">
-        <strong>Urban green infrastructure and cooling effects (Gill et al. 2007)</strong>
-        <a href="https://doi.org/10.1016/j.buildenv.2006.05.025" target="_blank">https://doi.org/10.1016/j.buildenv.2006.05.025</a>
-      </div>
-      <div class="source-item">
-        <strong>Trees and vegetation to reduce heat islands (US EPA)</strong>
-        <a href="https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands" target="_blank">https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands</a>
-      </div>
-      <div class="source-item">
-        <strong>Urban forest cooling review (3 to 8 degrees C canopy cooling)</strong>
-        <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352603/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352603/</a>
-      </div>
-      <div class="source-item">
-        <strong>Evapotranspiration latent heat value (2,260 kJ/kg)</strong>
-        <a href="https://www.fs.usda.gov/research/treesearch/46102" target="_blank">https://www.fs.usda.gov/research/treesearch/46102</a>
-      </div>
-    </div>
-
-    <div class="source-card">
-      <h4>Functional Groups in Organic Chemistry</h4>
-      <div class="source-item">
-        <strong>General organic chemistry functional group reference</strong>
-        <a href="https://www.khanacademy.org/science/organic-chemistry" target="_blank">https://www.khanacademy.org/science/organic-chemistry</a>
-      </div>
-      <div class="source-item">
-        <strong>IUPAC nomenclature and functional group classification</strong>
-        <a href="https://iupac.org/what-we-do/nomenclature/" target="_blank">https://iupac.org/what-we-do/nomenclature/</a>
-      </div>
-    </div>
-
-    <div class="source-card">
-      <h4>Conservation and Environmental Data for San Luis Potosi</h4>
-      <div class="source-item">
-        <strong>Mexican environmental protection standards (SEMARNAT)</strong>
-        <a href="https://www.gob.mx/semarnat" target="_blank">https://www.gob.mx/semarnat</a>
-      </div>
-      <div class="source-item">
-        <strong>Neonicotinoid and pesticide effects on pollinators</strong>
-        <a href="https://www.epa.gov/pollinator-protection" target="_blank">https://www.epa.gov/pollinator-protection</a>
-      </div>
-    </div>
-
+    <div class="source-card"><h4>Plant Species Identification and Taxonomy</h4><div class="source-item"><strong>General plant classification and species descriptions</strong><a href="https://www.kew.org/plants" target="_blank">https://www.kew.org/plants</a></div><div class="source-item"><strong>Official USDA plant database for scientific names</strong><a href="https://plants.usda.gov" target="_blank">https://plants.usda.gov</a></div><div class="source-item"><strong>Latin American botanical records (Tropicos)</strong><a href="https://www.tropicos.org" target="_blank">https://www.tropicos.org</a></div><div class="source-item"><strong>Citizen science plant identification for Mexico</strong><a href="https://www.inaturalist.org" target="_blank">https://www.inaturalist.org</a></div></div>
+    <div class="source-card"><h4>Molecular Structures and Chemical Formulas</h4><div class="source-item"><strong>Linalool: molecular formula, structure, and properties</strong><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Linalool" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Linalool</a></div><div class="source-item"><strong>Acemannan: polysaccharide structure data</strong><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Acemannan" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Acemannan</a></div><div class="source-item"><strong>Geraniol: molecular formula and perfume chemistry</strong><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Geraniol" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Geraniol</a></div><div class="source-item"><strong>Resveratrol: antioxidant structure data</strong><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Resveratrol" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Resveratrol</a></div><div class="source-item"><strong>D-Limonene: citrus peel compound data</strong><a href="https://pubchem.ncbi.nlm.nih.gov/compound/d-Limonene" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/d-Limonene</a></div><div class="source-item"><strong>Ascorbic acid (Vitamin C): structure and properties</strong><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic-acid" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Ascorbic-acid</a></div><div class="source-item"><strong>Lycopene: carotenoid structure data</strong><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Lycopene" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Lycopene</a></div><div class="source-item"><strong>Menthol: cyclic terpene alcohol data</strong><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Menthol" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Menthol</a></div><div class="source-item"><strong>Aloin: anthraquinone glycoside in aloe species</strong><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Aloin" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Aloin</a></div><div class="source-item"><strong>Aloe-emodin: anthraquinone structure and properties</strong><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Aloe-emodin" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Aloe-emodin</a></div><div class="source-item"><strong>Linamarin: cyanogenic glycoside data</strong><a href="https://pubchem.ncbi.nlm.nih.gov/compound/Linamarin" target="_blank">https://pubchem.ncbi.nlm.nih.gov/compound/Linamarin</a></div></div>
+    <div class="source-card"><h4>Linalool and GABA Receptor Interaction</h4><div class="source-item"><strong>Linalool anxiolytic effects and GABA modulation</strong><a href="https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/linalool" target="_blank">https://www.sciencedirect.com/topics/pharmacology-toxicology-and-pharmaceutical-science/linalool</a></div></div>
+    <div class="source-card"><h4>Acemannan Immune Properties</h4><div class="source-item"><strong>Immune-modulating properties of acemannan from Aloe vera</strong><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2763764/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC2763764/</a></div></div>
+    <div class="source-card"><h4>Aloe-emodin Anti-tumor Research</h4><div class="source-item"><strong>Aloe arborescens review: aloe-emodin laboratory studies</strong><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5920421/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5920421/</a></div></div>
+    <div class="source-card"><h4>Cassava Toxicology and Processing</h4><div class="source-item"><strong>FAO cassava processing and cyanide toxicology report</strong><a href="https://www.fao.org/3/T0207E/T0207E00.htm" target="_blank">https://www.fao.org/3/T0207E/T0207E00.htm</a></div></div>
+    <div class="source-card"><h4>Carbon Storage and Leaf Carbon Content</h4><div class="source-item"><strong>Carbon storage and sequestration by urban trees (Nowak et al. 2013)</strong><a href="https://www.nrs.fs.usda.gov/pubs/jrnl/2013/nrs_2013_nowak_001.pdf" target="_blank">https://www.nrs.fs.usda.gov/pubs/jrnl/2013/nrs_2013_nowak_001.pdf</a></div><div class="source-item"><strong>Leaf dry mass approximately 47% carbon (global meta-analysis)</strong><a href="https://www.nature.com/articles/s41559-019-0857-y" target="_blank">https://www.nature.com/articles/s41559-019-0857-y</a></div><div class="source-item"><strong>Plant carbon calculator tool (BGCI)</strong><a href="https://www.bgci.org/resources/bgci-tools-and-resources/plant-carbon-calculator/" target="_blank">https://www.bgci.org/resources/bgci-tools-and-resources/plant-carbon-calculator/</a></div></div>
+    <div class="source-card"><h4>Photosynthesis and Calvin Cycle</h4><div class="source-item"><strong>Light reactions and Calvin cycle educational reference</strong><a href="https://www.khanacademy.org/science/ap-biology/cellular-energetics/photosynthesis/a/steps-of-the-light-reactions" target="_blank">https://www.khanacademy.org/science/ap-biology/cellular-energetics/photosynthesis/a/steps-of-the-light-reactions</a></div></div>
+    <div class="source-card"><h4>Soil Science: Organic Matter, CEC, and Water Retention</h4><div class="source-item"><strong>Soil organic matter and CEC explained (USDA NRCS)</strong><a href="https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soils/soil-health" target="_blank">https://www.nrcs.usda.gov/conservation-basics/natural-resource-concerns/soils/soil-health</a></div><div class="source-item"><strong>Humic acid chemistry and structure</strong><a href="https://www.sciencedirect.com/topics/earth-and-planetary-sciences/humic-acid" target="_blank">https://www.sciencedirect.com/topics/earth-and-planetary-sciences/humic-acid</a></div><div class="source-item"><strong>Soil organic matter water retention (+20,000 L/ha per 1% increase)</strong><a href="https://soilhealthinstitute.org" target="_blank">https://soilhealthinstitute.org</a></div><div class="source-item"><strong>Decomposition rate model (Olson 1963)</strong><a href="https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1932179" target="_blank">https://esajournals.onlinelibrary.wiley.com/doi/10.2307/1932179</a></div></div>
+    <div class="source-card"><h4>Temperature, Shade, and Evapotranspiration</h4><div class="source-item"><strong>Urban green infrastructure and cooling effects (Gill et al. 2007)</strong><a href="https://doi.org/10.1016/j.buildenv.2006.05.025" target="_blank">https://doi.org/10.1016/j.buildenv.2006.05.025</a></div><div class="source-item"><strong>Trees and vegetation to reduce heat islands (US EPA)</strong><a href="https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands" target="_blank">https://www.epa.gov/heatislands/using-trees-and-vegetation-reduce-heat-islands</a></div><div class="source-item"><strong>Urban forest cooling review (3 to 8 degrees C canopy cooling)</strong><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352603/" target="_blank">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6352603/</a></div><div class="source-item"><strong>Evapotranspiration latent heat value (2,260 kJ/kg)</strong><a href="https://www.fs.usda.gov/research/treesearch/46102" target="_blank">https://www.fs.usda.gov/research/treesearch/46102</a></div></div>
+    <div class="source-card"><h4>Functional Groups in Organic Chemistry</h4><div class="source-item"><strong>General organic chemistry functional group reference</strong><a href="https://www.khanacademy.org/science/organic-chemistry" target="_blank">https://www.khanacademy.org/science/organic-chemistry</a></div><div class="source-item"><strong>IUPAC nomenclature and functional group classification</strong><a href="https://iupac.org/what-we-do/nomenclature/" target="_blank">https://iupac.org/what-we-do/nomenclature/</a></div></div>
+    <div class="source-card"><h4>Conservation and Environmental Data for San Luis Potosi</h4><div class="source-item"><strong>Mexican environmental protection standards (SEMARNAT)</strong><a href="https://www.gob.mx/semarnat" target="_blank">https://www.gob.mx/semarnat</a></div><div class="source-item"><strong>Neonicotinoid and pesticide effects on pollinators</strong><a href="https://www.epa.gov/pollinator-protection" target="_blank">https://www.epa.gov/pollinator-protection</a></div></div>
   </div>
 </section>
-
+ 
 <!-- FOOTER -->
 <footer>
   <div style="font-family:'Fredoka One',cursive;font-size:1.5rem;color:var(--lime);margin-bottom:0.5rem;">PrepaTec Campus San Luis Potosi</div>
   <div style="font-family:'JetBrains Mono',monospace;font-size:0.8rem;color:rgba(255,255,255,0.5);margin-bottom:0.75rem;">Garden Chemistry Lab . Matter and Sustainability. Spring 2026</div>
   <p>Made by Carlos Gutierrez, Luis Zapata, Emil Antonio, Maria Lugos y Jorge Olivares</p>
 </footer>
-
+ 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.0/chart.umd.min.js"></script>
 <script>
-// Floating leaves (no emojis, using leaf-like characters)
+// Floating leaves
 const leafChars = ['\u2618','\u2740','\u2741','\u273F','\u2698','\u2697'];
 const fe = document.getElementById('floaty');
 for (let i = 0; i < 14; i++) {
@@ -2388,7 +2062,7 @@ for (let i = 0; i < 14; i++) {
   d.style.cssText = 'left:'+Math.random()*100+'%;animation-duration:'+(8+Math.random()*10)+'s;animation-delay:'+(-Math.random()*18)+'s;font-size:'+(1.2+Math.random()*1.5)+'rem;';
   fe.appendChild(d);
 }
-
+ 
 // Carbon chart
 new Chart(document.getElementById('carbonChart'), {
   type: 'bar',
@@ -2414,7 +2088,7 @@ new Chart(document.getElementById('carbonChart'), {
     }
   }
 });
-
+ 
 // Temp chart
 var hrs = ['6am','8am','10am','12pm','2pm','4pm','6pm','8pm'];
 new Chart(document.getElementById('tempChart'), {
@@ -2435,7 +2109,7 @@ new Chart(document.getElementById('tempChart'), {
     }
   }
 });
-
+ 
 // Soil bar interaction
 var soilData = [
   { pos: 8,  om: '0.5 to 1%', ph: '7.5', cec: '5 meq/100g', water: 'Low', desc: 'Sandy soil. Mostly quartz (SiO2) and feldspar minerals. Water drains right through and nutrients wash away fast. Light tan color means almost no humus (decomposed organic material). This type of soil is common in the arid zones north of San Luis Potosi city. Hard to grow much here without adding compost.' },
@@ -2447,7 +2121,7 @@ var soilData = [
 var bar = document.getElementById('soilBar');
 var cursor = document.getElementById('soilCursor');
 var readout = document.getElementById('soilReadout');
-
+ 
 bar.addEventListener('click', function(e) {
   var rect = bar.getBoundingClientRect();
   var pct = Math.max(5, Math.min(95, ((e.clientX - rect.left) / rect.width) * 100));
@@ -2455,7 +2129,7 @@ bar.addEventListener('click', function(e) {
   var d = soilData.reduce(function(a, b) { return Math.abs(b.pos-pct) < Math.abs(a.pos-pct) ? b : a; });
   readout.innerHTML = '<strong>Organic Matter: ' + d.om + '</strong> | pH: ' + d.ph + ' | CEC: ' + d.cec + ' | Water Retention: ' + d.water + '<br><span style="display:block;margin-top:0.5rem">' + d.desc + '</span>';
 });
-
+ 
 // Temp animation
 var tick = 0;
 setInterval(function() {
@@ -2463,7 +2137,7 @@ setInterval(function() {
   document.getElementById('sunT').textContent = (38 + Math.sin(tick*0.4)*1.5).toFixed(1)+' C';
   document.getElementById('shadeT').textContent = (27 + Math.sin(tick*0.4)*0.8).toFixed(1)+' C';
 }, 1500);
-
+ 
 // Garden images
 var GARDEN_IMGS = {
   lavender:         'images/lavender.jpg',
@@ -2476,33 +2150,20 @@ var GARDEN_IMGS = {
   raised_beds:      'images/raised-beds.jpg',
   raised_beds2:     'images/raised-beds.jpg'
 };
-var galleryData = [
-  { img: GARDEN_IMGS.cassava,          name: 'Cassava / Yuca',        sci: 'Manihot esculenta' },
-  { img: GARDEN_IMGS.cassava_close,    name: 'Cassava leaves (close)', sci: 'Manihot esculenta' },
-  { img: GARDEN_IMGS.lavender,         name: 'French Lavender',        sci: 'Lavandula dentata' },
-  { img: GARDEN_IMGS.geranium_aloe,    name: 'Geranium + Aloe vera',   sci: 'Pelargonium x hortorum / Aloe vera' },
-  { img: GARDEN_IMGS.aloe_vera_bloom,  name: 'Aloe vera in bloom',     sci: 'Aloe vera (L.) Burm.f.' },
-  { img: GARDEN_IMGS.aloe_arborescens, name: 'Torch Aloe blooming',    sci: 'Aloe arborescens' },
-  { img: GARDEN_IMGS.lime_tree,        name: 'Lime Tree with fruits',  sci: 'Citrus aurantifolia' },
-  { img: GARDEN_IMGS.mulberry,         name: 'Mulberry Tree',          sci: 'Morus sp.' },
-  { img: GARDEN_IMGS.raised_beds,      name: 'Mixed Raised Beds',      sci: 'Solanum lycopersicum + herbs' },
-  { img: GARDEN_IMGS.raised_beds2,     name: 'Raised Bed with Herbs',  sci: 'Petroselinum crispum + Mentha sp.' },
-  { img: GARDEN_IMGS.garden_overview,  name: 'Our Full Garden',        sci: 'The whole living lab' },
-];
-
+ 
 // Inject species card photos
 var photoMap = {
-  'lavender':        GARDEN_IMGS.lavender,
-  'aloe-vera':       GARDEN_IMGS.aloe_vera_bloom,
-  'geranium':        GARDEN_IMGS.geranium_aloe,
-  'mulberry':        GARDEN_IMGS.mulberry,
-  'cassava':         GARDEN_IMGS.cassava_close,
-  'aloe-arborescens':GARDEN_IMGS.aloe_arborescens,
-  'lime':            GARDEN_IMGS.lime_tree,
-  'tomato':          GARDEN_IMGS.raised_beds2,
-  'herbs':           GARDEN_IMGS.raised_beds,
+  'lavender':         GARDEN_IMGS.lavender,
+  'aloe-vera':        GARDEN_IMGS.aloe_vera_bloom,
+  'geranium':         GARDEN_IMGS.geranium_aloe,
+  'mulberry':         GARDEN_IMGS.mulberry,
+  'cassava':          GARDEN_IMGS.cassava_close,
+  'aloe-arborescens': GARDEN_IMGS.aloe_arborescens,
+  'lime':             GARDEN_IMGS.lime_tree,
+  'tomato':           GARDEN_IMGS.raised_beds2,
+  'herbs':            GARDEN_IMGS.raised_beds,
 };
-
+ 
 document.querySelectorAll('.sp-card[data-photo]').forEach(function(card) {
   var key = card.getAttribute('data-photo');
   if (photoMap[key]) {
@@ -2516,7 +2177,52 @@ document.querySelectorAll('.sp-card[data-photo]').forEach(function(card) {
     card.insertBefore(wrap, card.firstChild);
   }
 });
-
+ 
+/* ── Lightbox ── */
+(function() {
+  var lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.innerHTML =
+    '<button class="lightbox-close" aria-label="Close">&times;</button>' +
+    '<img src="" alt="">' +
+    '<div class="lightbox-caption"></div>';
+  document.body.appendChild(lb);
+ 
+  var lbImg = lb.querySelector('img');
+  var lbCap = lb.querySelector('.lightbox-caption');
+ 
+  function openLightbox(src, common, sci) {
+    lbImg.src = src;
+    lbCap.innerHTML = common + (sci ? '<span class="sci">' + sci + '</span>' : '');
+    lb.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+ 
+  function closeLightbox() {
+    lb.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+ 
+  lb.addEventListener('click', function(e) {
+    if (e.target === lb || e.target.classList.contains('lightbox-close')) {
+      closeLightbox();
+    }
+  });
+ 
+  document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape' && lb.classList.contains('open')) closeLightbox();
+  });
+ 
+  document.addEventListener('click', function(e) {
+    if (e.target.classList && e.target.classList.contains('sp-photo')) {
+      var card = e.target.closest('.sp-card');
+      var common = card ? card.querySelector('.sp-common').textContent : '';
+      var sci    = card ? card.querySelector('.sp-sci').textContent    : '';
+      openLightbox(e.target.src, common, sci);
+    }
+  });
+})();
+ 
 /* ── Conservation: Tab switching ── */
 function consTab(idx) {
   document.querySelectorAll('.cons-tab-btn').forEach(function(b, i) {
@@ -2528,7 +2234,7 @@ function consTab(idx) {
   if (idx === 2) animateConsBars();
   if (idx === 1) animateSLPBar();
 }
-
+ 
 /* ── Conservation: Contamination path click ── */
 function consPathClick(el, idx) {
   document.querySelectorAll('.cons-path-step').forEach(function(s) {
@@ -2536,7 +2242,7 @@ function consPathClick(el, idx) {
   });
   el.classList.add('active');
 }
-
+ 
 /* ── Conservation: Animated stat counters ── */
 var consStatsAnimated = false;
 function animateConsStats() {
@@ -2558,7 +2264,7 @@ function animateConsStats() {
     requestAnimationFrame(tick);
   });
 }
-
+ 
 /* ── Conservation: Animated country bars ── */
 function animateConsBars() {
   document.querySelectorAll('.cons-bar-fill').forEach(function(bar) {
@@ -2568,7 +2274,7 @@ function animateConsBars() {
     }, 80);
   });
 }
-
+ 
 /* ── Conservation: SLP contamination bar ── */
 function animateSLPBar() {
   var fill = document.getElementById('slpBarFill');
@@ -2585,7 +2291,7 @@ function animateSLPBar() {
     }, 22);
   }, 200);
 }
-
+ 
 /* ── Intersection Observer for conservation stats ── */
 var consStatsEl = document.getElementById('consStats');
 if (consStatsEl && window.IntersectionObserver) {
@@ -2596,6 +2302,6 @@ if (consStatsEl && window.IntersectionObserver) {
   }, { threshold: 0.3 }).observe(consStatsEl);
 }
 </script>
-
+ 
 </body>
 </html>
