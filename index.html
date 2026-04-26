@@ -644,7 +644,7 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
  
 .fg-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 220px));
   gap: 1rem;
   margin-top: 2rem;
 }
@@ -658,7 +658,10 @@ nav a:hover { color: var(--green); border-bottom-color: var(--green); }
   transition: transform 0.2s, box-shadow 0.2s;
   cursor: default;
 }
- 
+ .fg-card img {
+  display: block;
+  margin: 0 auto;
+}
 .fg-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 24px rgba(245,210,71,0.3);
